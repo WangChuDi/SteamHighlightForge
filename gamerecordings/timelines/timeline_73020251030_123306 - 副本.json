@@ -1,0 +1,2341 @@
+{
+	"daterecorded": "1761827586",
+	"starttime": "0",
+	"entries": [
+		{
+			"id": "1",
+			"time": "12333",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "2",
+			"time": "16394",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "3",
+			"time": "28400",
+			"type": "gamemode",
+			"mode": 4
+		}
+,
+		{
+			"id": "4",
+			"time": "33659",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "5",
+			"time": "39016",
+			"type": "event",
+			"title": "回合开始1",
+			"description": "列车停放站",
+			"icon": "cs2_1",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "6",
+			"time": "34016",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "7",
+			"time": "66602",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了Lesli3 and 76561199201347757 使用格洛克 18 型",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "8703",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "8",
+			"time": "85210",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "最难是放安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "9",
+			"time": "91064",
+			"type": "event",
+			"title": "回合开始2",
+			"description": "列车停放站",
+			"icon": "cs2_2",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "10",
+			"time": "86064",
+			"type": "state_description",
+			"title": "第2回合"
+		}
+,
+		{
+			"id": "11",
+			"time": "124072",
+			"type": "event",
+			"title": "你击杀了Lesli3",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "12",
+			"time": "136960",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "Tazikara Takumi安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "13",
+			"time": "178016",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "14",
+			"time": "190007",
+			"type": "event",
+			"title": "回合开始3",
+			"description": "列车停放站",
+			"icon": "cs2_3",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "15",
+			"time": "185007",
+			"type": "state_description",
+			"title": "第3回合"
+		}
+,
+		{
+			"id": "16",
+			"time": "214345",
+			"type": "event",
+			"title": "你击杀了MaJA7",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "17",
+			"time": "327016",
+			"type": "event",
+			"title": "回合开始4",
+			"description": "列车停放站",
+			"icon": "cs2_4",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "18",
+			"time": "322016",
+			"type": "state_description",
+			"title": "第4回合"
+		}
+,
+		{
+			"id": "19",
+			"time": "382088",
+			"type": "event",
+			"title": "你击杀了不当人",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "20",
+			"time": "388784",
+			"type": "event",
+			"title": "你击杀了Aleksib",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "21",
+			"time": "401116",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "wardell安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "22",
+			"time": "423318",
+			"type": "event",
+			"title": "你击杀了Lesli3",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "23",
+			"time": "442112",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "24",
+			"time": "454149",
+			"type": "event",
+			"title": "回合开始5",
+			"description": "列车停放站",
+			"icon": "cs2_5",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "25",
+			"time": "449149",
+			"type": "state_description",
+			"title": "第5回合"
+		}
+,
+		{
+			"id": "26",
+			"time": "516751",
+			"type": "event",
+			"title": "你击杀了不当人",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "27",
+			"time": "534578",
+			"type": "event",
+			"title": "回合开始6",
+			"description": "列车停放站",
+			"icon": "cs2_6",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "28",
+			"time": "529578",
+			"type": "state_description",
+			"title": "第6回合"
+		}
+,
+		{
+			"id": "29",
+			"time": "558183",
+			"type": "event",
+			"title": "你击杀了Lesli3",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "30",
+			"time": "581975",
+			"type": "event",
+			"title": "你击杀了Aleksib",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "31",
+			"time": "595252",
+			"type": "event",
+			"title": "你被不当人击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "32",
+			"time": "601312",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "wardell安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "33",
+			"time": "619658",
+			"type": "event",
+			"title": "回合开始7",
+			"description": "列车停放站",
+			"icon": "cs2_7",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "34",
+			"time": "614658",
+			"type": "state_description",
+			"title": "第7回合"
+		}
+,
+		{
+			"id": "35",
+			"time": "646438",
+			"type": "event",
+			"title": "你被不当人击杀",
+			"description": "使用AWP",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "36",
+			"time": "731598",
+			"type": "event",
+			"title": "回合开始8",
+			"description": "列车停放站",
+			"icon": "cs2_8",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "37",
+			"time": "726598",
+			"type": "state_description",
+			"title": "第8回合"
+		}
+,
+		{
+			"id": "38",
+			"time": "760352",
+			"type": "event",
+			"title": "你被MaJA7击杀",
+			"description": "使用M4A1 消音型",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "39",
+			"time": "801277",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "Tazikara Takumi安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "40",
+			"time": "827368",
+			"type": "event",
+			"title": "回合开始9",
+			"description": "列车停放站",
+			"icon": "cs2_9",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "41",
+			"time": "822368",
+			"type": "state_description",
+			"title": "第9回合"
+		}
+,
+		{
+			"id": "42",
+			"time": "851504",
+			"type": "event",
+			"title": "你击杀了不当人",
+			"description": "使用AWP",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "43",
+			"time": "886642",
+			"type": "event",
+			"title": "你击杀了MaJA7",
+			"description": "使用AWP",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "44",
+			"time": "905973",
+			"type": "event",
+			"title": "回合开始10",
+			"description": "列车停放站",
+			"icon": "cs2_10",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "45",
+			"time": "900973",
+			"type": "state_description",
+			"title": "第10回合"
+		}
+,
+		{
+			"id": "46",
+			"time": "940768",
+			"type": "event",
+			"title": "你被不当人击杀",
+			"description": "使用沙漠之鹰",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "47",
+			"time": "937017",
+			"type": "event",
+			"title": "你击杀了Lesli3",
+			"description": "使用AWP",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "48",
+			"time": "972776",
+			"type": "event",
+			"title": "回合开始11",
+			"description": "列车停放站",
+			"icon": "cs2_11",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "49",
+			"time": "967776",
+			"type": "state_description",
+			"title": "第11回合"
+		}
+,
+		{
+			"id": "50",
+			"time": "1006589",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "最难是放安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "51",
+			"time": "1002643",
+			"type": "event",
+			"title": "你击杀了Aleksib",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "52",
+			"time": "1028569",
+			"type": "event",
+			"title": "你击杀了76561199201347757",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "53",
+			"time": "1047648",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "54",
+			"time": "1059685",
+			"type": "event",
+			"title": "回合开始12",
+			"description": "列车停放站",
+			"icon": "cs2_12",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "55",
+			"time": "1054685",
+			"type": "state_description",
+			"title": "第12回合"
+		}
+,
+		{
+			"id": "56",
+			"time": "1054227",
+			"type": "event",
+			"title": "你击杀了不当人",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "57",
+			"time": "1107598",
+			"type": "event",
+			"title": "你击杀了Lesli3",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "58",
+			"time": "1137037",
+			"type": "event",
+			"title": "你被MaJA7击杀",
+			"description": "使用M4A1 消音型",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "59",
+			"time": "1184274",
+			"type": "event",
+			"title": "回合开始13",
+			"description": "列车停放站",
+			"icon": "cs2_13",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "60",
+			"time": "1179274",
+			"type": "state_description",
+			"title": "第13回合"
+		}
+,
+		{
+			"id": "61",
+			"time": "1233726",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "Lesli3安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "62",
+			"time": "1239065",
+			"type": "event",
+			"title": "你击杀了MaJA7",
+			"description": "使用USP 消音版",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "63",
+			"time": "1246767",
+			"type": "event",
+			"title": "你被Aleksib击杀",
+			"description": "使用格洛克 18 型",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "64",
+			"time": "1258808",
+			"type": "event",
+			"title": "回合开始14",
+			"description": "列车停放站",
+			"icon": "cs2_14",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "65",
+			"time": "1253808",
+			"type": "state_description",
+			"title": "第14回合"
+		}
+,
+		{
+			"id": "66",
+			"time": "1298096",
+			"type": "event",
+			"title": "你被Aleksib击杀",
+			"description": "使用MAC-10",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "67",
+			"time": "1299504",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "MaJA7安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "68",
+			"time": "1310133",
+			"type": "event",
+			"title": "回合开始15",
+			"description": "列车停放站",
+			"icon": "cs2_15",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "69",
+			"time": "1305133",
+			"type": "state_description",
+			"title": "第15回合"
+		}
+,
+		{
+			"id": "70",
+			"time": "1340276",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了不当人 and Lesli3 使用M4A1 消音型",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "5812",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "71",
+			"time": "1356608",
+			"type": "event",
+			"title": "你被MaJA7击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "72",
+			"time": "1376112",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "Aleksib安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "73",
+			"time": "1393800",
+			"type": "event",
+			"title": "回合开始16",
+			"description": "列车停放站",
+			"icon": "cs2_16",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "74",
+			"time": "1388800",
+			"type": "state_description",
+			"title": "第16回合"
+		}
+,
+		{
+			"id": "75",
+			"time": "1421273",
+			"type": "event",
+			"title": "你击杀了76561199201347757",
+			"description": "使用SSG 08",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "76",
+			"time": "1467929",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "Aleksib安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "77",
+			"time": "1472800",
+			"type": "event",
+			"title": "你被Lesli3击杀",
+			"description": "使用AWP",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "78",
+			"time": "1487173",
+			"type": "event",
+			"title": "回合开始17",
+			"description": "列车停放站",
+			"icon": "cs2_17",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "79",
+			"time": "1482173",
+			"type": "state_description",
+			"title": "第17回合"
+		}
+,
+		{
+			"id": "80",
+			"time": "1522768",
+			"type": "event",
+			"title": "你被Lesli3击杀",
+			"description": "使用AWP",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "81",
+			"time": "1580127",
+			"type": "event",
+			"title": "回合开始18",
+			"description": "列车停放站",
+			"icon": "cs2_18",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "82",
+			"time": "1575127",
+			"type": "state_description",
+			"title": "第18回合"
+		}
+,
+		{
+			"id": "83",
+			"time": "1602623",
+			"type": "event",
+			"title": "你被Lesli3击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "84",
+			"time": "1676096",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "Aleksib安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "85",
+			"time": "1708581",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "Tazikara Takumi拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "86",
+			"time": "1720536",
+			"type": "event",
+			"title": "回合开始19",
+			"description": "列车停放站",
+			"icon": "cs2_19",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "87",
+			"time": "1715536",
+			"type": "state_description",
+			"title": "第19回合"
+		}
+,
+		{
+			"id": "88",
+			"time": "1751904",
+			"type": "event",
+			"title": "你被MaJA7击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "89",
+			"time": "1750329",
+			"type": "event",
+			"title": "你击杀了76561199201347757",
+			"description": "使用M4A1 消音型",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "90",
+			"time": "1762444",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "Lesli3安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "91",
+			"time": "1768884",
+			"type": "event",
+			"title": "回合开始20",
+			"description": "列车停放站",
+			"icon": "cs2_20",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "92",
+			"time": "1763885",
+			"type": "state_description",
+			"title": "第20回合"
+		}
+,
+		{
+			"id": "93",
+			"time": "1869455",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "不当人安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "94",
+			"time": "1902624",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "最难是放拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "95",
+			"time": "1914677",
+			"type": "event",
+			"title": "回合开始21",
+			"description": "列车停放站",
+			"icon": "cs2_21",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "96",
+			"time": "1909677",
+			"type": "state_description",
+			"title": "第21回合"
+		}
+,
+		{
+			"id": "97",
+			"time": "1945962",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了不当人 and Lesli3 使用M4A1 消音型",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "6046",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "98",
+			"time": "1971129",
+			"type": "event",
+			"title": "你击杀了76561199201347757",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "99",
+			"time": "2000320",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "Aleksib安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "100",
+			"time": "2017804",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "你拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 500,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "101",
+			"time": "2029847",
+			"type": "event",
+			"title": "回合开始22",
+			"description": "列车停放站",
+			"icon": "cs2_22",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "102",
+			"time": "2024848",
+			"type": "state_description",
+			"title": "第22回合"
+		}
+,
+		{
+			"id": "103",
+			"time": "2050688",
+			"type": "event",
+			"title": "你被76561199201347757击杀",
+			"description": "使用Tec-9",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "104",
+			"time": "2134899",
+			"type": "event",
+			"title": "回合开始23",
+			"description": "列车停放站",
+			"icon": "cs2_23",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "105",
+			"time": "2129899",
+			"type": "state_description",
+			"title": "第23回合"
+		}
+,
+		{
+			"id": "106",
+			"time": "2155113",
+			"type": "event",
+			"title": "你击杀了76561199201347757",
+			"description": "使用M4A1 消音型",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "107",
+			"time": "2196804",
+			"type": "event",
+			"title": "你击杀了Aleksib",
+			"description": "使用M4A1 消音型",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "108",
+			"time": "2229648",
+			"type": "event",
+			"title": "你击杀了MaJA7",
+			"description": "使用M4A1 消音型",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "109",
+			"time": "2241752",
+			"type": "event",
+			"title": "回合开始24",
+			"description": "列车停放站",
+			"icon": "cs2_24",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "110",
+			"time": "2236752",
+			"type": "state_description",
+			"title": "第24回合"
+		}
+,
+		{
+			"id": "111",
+			"time": "2276753",
+			"type": "event",
+			"title": "你击杀了Lesli3",
+			"description": "使用M4A1 消音型",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "112",
+			"time": "2296288",
+			"type": "event",
+			"title": "你被不当人击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "113",
+			"time": "2301964",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "114",
+			"time": "2305424",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "115",
+			"time": "2483423",
+			"type": "gamemode",
+			"mode": 4
+		}
+,
+		{
+			"id": "116",
+			"time": "2488422",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "120",
+			"time": "2520694",
+			"type": "phase",
+			"duration": "2219759",
+			"tags": [
+				{
+					"name": "竞技模式",
+					"icon": "cs2_logo",
+					"group": "模式",
+					"priority": 500
+				}
+,
+				{
+					"name": "炼狱小镇",
+					"icon": "map_icon_de_inferno",
+					"group": "地图",
+					"priority": 500
+				}
+
+			]
+
+		}
+,
+		{
+			"id": "117",
+			"time": "2525693",
+			"type": "event",
+			"title": "回合开始1",
+			"description": "炼狱小镇",
+			"icon": "cs2_1",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "118",
+			"time": "2520694",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "119",
+			"time": "2520695",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "121",
+			"time": "2567642",
+			"type": "event",
+			"title": "你被zanzannie击杀",
+			"description": "使用USP 消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "122",
+			"time": "2578767",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "最难是放安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "123",
+			"time": "2619575",
+			"type": "event",
+			"title": "回合开始2",
+			"description": "炼狱小镇",
+			"icon": "cs2_2",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "124",
+			"time": "2614575",
+			"type": "state_description",
+			"title": "第2回合"
+		}
+,
+		{
+			"id": "125",
+			"time": "2641398",
+			"type": "event",
+			"title": "你击杀了爷傲丿奈我何",
+			"description": "使用SSG 08",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "126",
+			"time": "2688911",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "你安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 500,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "127",
+			"time": "2729941",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "128",
+			"time": "2742055",
+			"type": "event",
+			"title": "回合开始3",
+			"description": "炼狱小镇",
+			"icon": "cs2_3",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "129",
+			"time": "2737055",
+			"type": "state_description",
+			"title": "第3回合"
+		}
+,
+		{
+			"id": "130",
+			"time": "2795040",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了最难是放 and 爷傲丿奈我何",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "7046",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "131",
+			"time": "2819144",
+			"type": "event",
+			"title": "你击杀了-4°",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "132",
+			"time": "2842674",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "Tazikara Takumi安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "133",
+			"time": "2883711",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "134",
+			"time": "2895815",
+			"type": "event",
+			"title": "回合开始4",
+			"description": "炼狱小镇",
+			"icon": "cs2_4",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "135",
+			"time": "2890815",
+			"type": "state_description",
+			"title": "第4回合"
+		}
+,
+		{
+			"id": "136",
+			"time": "2936704",
+			"type": "event",
+			"title": "你击杀了YY1997",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "137",
+			"time": "3002206",
+			"type": "event",
+			"title": "你击杀了DDplay",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "138",
+			"time": "3010207",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "你安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 500,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "139",
+			"time": "3028600",
+			"type": "event",
+			"title": "你击杀了爷傲丿奈我何",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "140",
+			"time": "3038771",
+			"type": "event",
+			"title": "你击杀了-4°",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "141",
+			"time": "3050925",
+			"type": "event",
+			"title": "回合开始5",
+			"description": "炼狱小镇",
+			"icon": "cs2_5",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "142",
+			"time": "3045925",
+			"type": "state_description",
+			"title": "第5回合"
+		}
+,
+		{
+			"id": "143",
+			"time": "3135173",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "wardell安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "144",
+			"time": "3134424",
+			"type": "event",
+			"title": "你击杀了爷傲丿奈我何",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "145",
+			"time": "3166211",
+			"type": "event",
+			"title": "你击杀了zanzannie",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "146",
+			"time": "3176143",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "147",
+			"time": "3188316",
+			"type": "event",
+			"title": "回合开始6",
+			"description": "炼狱小镇",
+			"icon": "cs2_6",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "148",
+			"time": "3183316",
+			"type": "state_description",
+			"title": "第6回合"
+		}
+,
+		{
+			"id": "149",
+			"time": "3222181",
+			"type": "event",
+			"title": "你击杀了YY1997",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "150",
+			"time": "3252926",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "你安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 500,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "151",
+			"time": "3267596",
+			"type": "event",
+			"title": "你击杀了DDplay",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "152",
+			"time": "3283912",
+			"type": "event",
+			"title": "你击杀了-4°",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "153",
+			"time": "3296039",
+			"type": "event",
+			"title": "回合开始7",
+			"description": "炼狱小镇",
+			"icon": "cs2_7",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "154",
+			"time": "3291039",
+			"type": "state_description",
+			"title": "第7回合"
+		}
+,
+		{
+			"id": "155",
+			"time": "3307486",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "156",
+			"time": "3308447",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "157",
+			"time": "3399212",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了DDplay and 爷傲丿奈我何 使用AK-47",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "8187",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "158",
+			"time": "3412847",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "你安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 500,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "159",
+			"time": "3432508",
+			"type": "event",
+			"title": "你被-4°击杀",
+			"description": "使用M4A4",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "160",
+			"time": "3445727",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "-4°拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "161",
+			"time": "3457863",
+			"type": "event",
+			"title": "回合开始8",
+			"description": "炼狱小镇",
+			"icon": "cs2_8",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "162",
+			"time": "3452863",
+			"type": "state_description",
+			"title": "第8回合"
+		}
+,
+		{
+			"id": "163",
+			"time": "3485176",
+			"type": "event",
+			"title": "你被DDplay击杀",
+			"description": "使用焚烧",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "164",
+			"time": "3570535",
+			"type": "event",
+			"title": "回合开始9",
+			"description": "炼狱小镇",
+			"icon": "cs2_9",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "165",
+			"time": "3565536",
+			"type": "state_description",
+			"title": "第9回合"
+		}
+,
+		{
+			"id": "166",
+			"time": "3606361",
+			"type": "event",
+			"title": "你击杀了YY1997",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "167",
+			"time": "3675353",
+			"type": "event",
+			"title": "你击杀了-4°",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "168",
+			"time": "3691940",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "wardell安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "169",
+			"time": "3682699",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了zanzannie and DDplay 使用AK-47",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "7453",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "170",
+			"time": "3700340",
+			"type": "event",
+			"title": "回合开始10",
+			"description": "炼狱小镇",
+			"icon": "cs2_10",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "171",
+			"time": "3695340",
+			"type": "state_description",
+			"title": "第10回合"
+		}
+,
+		{
+			"id": "172",
+			"time": "3736697",
+			"type": "event",
+			"title": "你击杀了YY1997",
+			"description": "使用焚烧",
+			"icon": "cs2_inferno_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "173",
+			"time": "3748392",
+			"type": "event",
+			"title": "你击杀了DDplay",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "174",
+			"time": "3778683",
+			"type": "event",
+			"title": "你被爷傲丿奈我何击杀",
+			"description": "使用M4A1 消音型",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "175",
+			"time": "3817395",
+			"type": "event",
+			"title": "回合开始11",
+			"description": "炼狱小镇",
+			"icon": "cs2_11",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "176",
+			"time": "3812395",
+			"type": "state_description",
+			"title": "第11回合"
+		}
+,
+		{
+			"id": "177",
+			"time": "3894864",
+			"type": "event",
+			"title": "你被zanzannie击杀",
+			"description": "使用M4A1 消音型",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "178",
+			"time": "3924438",
+			"type": "event",
+			"title": "回合开始12",
+			"description": "炼狱小镇",
+			"icon": "cs2_12",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "179",
+			"time": "3919438",
+			"type": "state_description",
+			"title": "第12回合"
+		}
+,
+		{
+			"id": "180",
+			"time": "3961256",
+			"type": "event",
+			"title": "你被DDplay击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "181",
+			"time": "3960039",
+			"type": "event",
+			"title": "你击杀了zanzannie",
+			"description": "使用Tec-9",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "182",
+			"time": "3989520",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "最难是放安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "183",
+			"time": "4008783",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "爷傲丿奈我何拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "184",
+			"time": "4022503",
+			"type": "event",
+			"title": "回合开始13",
+			"description": "炼狱小镇",
+			"icon": "cs2_13",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "185",
+			"time": "4017504",
+			"type": "state_description",
+			"title": "第13回合"
+		}
+,
+		{
+			"id": "186",
+			"time": "4066160",
+			"type": "event",
+			"title": "你被-4°击杀",
+			"description": "使用格洛克 18 型",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "187",
+			"time": "4064104",
+			"type": "event",
+			"title": "你击杀了DDplay",
+			"description": "使用USP 消音版",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "188",
+			"time": "4087895",
+			"type": "event",
+			"title": "回合开始14",
+			"description": "炼狱小镇",
+			"icon": "cs2_14",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "189",
+			"time": "4082896",
+			"type": "state_description",
+			"title": "第14回合"
+		}
+,
+		{
+			"id": "190",
+			"time": "4153855",
+			"type": "event",
+			"title": "你被-4°击杀",
+			"description": "使用P250",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "191",
+			"time": "4171428",
+			"type": "event",
+			"title": "回合开始15",
+			"description": "炼狱小镇",
+			"icon": "cs2_15",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "192",
+			"time": "4166429",
+			"type": "state_description",
+			"title": "第15回合"
+		}
+,
+		{
+			"id": "193",
+			"time": "4246020",
+			"type": "event",
+			"title": "你被-4°击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "194",
+			"time": "4273223",
+			"type": "event",
+			"title": "回合开始16",
+			"description": "炼狱小镇",
+			"icon": "cs2_16",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "195",
+			"time": "4268223",
+			"type": "state_description",
+			"title": "第16回合"
+		}
+,
+		{
+			"id": "196",
+			"time": "4339299",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "zanzannie安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "197",
+			"time": "4380319",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "198",
+			"time": "4392439",
+			"type": "event",
+			"title": "回合开始17",
+			"description": "炼狱小镇",
+			"icon": "cs2_17",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "199",
+			"time": "4387439",
+			"type": "state_description",
+			"title": "第17回合"
+		}
+,
+		{
+			"id": "200",
+			"time": "4484568",
+			"type": "event",
+			"title": "你击杀了zanzannie",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "201",
+			"time": "4496695",
+			"type": "event",
+			"title": "回合开始18",
+			"description": "炼狱小镇",
+			"icon": "cs2_18",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "202",
+			"time": "4491695",
+			"type": "state_description",
+			"title": "第18回合"
+		}
+,
+		{
+			"id": "203",
+			"time": "4520005",
+			"type": "event",
+			"title": "你击杀了爷傲丿奈我何",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "204",
+			"time": "4527863",
+			"type": "event",
+			"title": "你击杀了-4°",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "205",
+			"time": "4538837",
+			"type": "event",
+			"title": "你击杀了zanzannie",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "206",
+			"time": "4574376",
+			"type": "event",
+			"title": "你击杀了YY1997",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "207",
+			"time": "4586548",
+			"type": "event",
+			"title": "回合开始19",
+			"description": "炼狱小镇",
+			"icon": "cs2_19",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "208",
+			"time": "4581548",
+			"type": "state_description",
+			"title": "第19回合"
+		}
+,
+		{
+			"id": "209",
+			"time": "4632463",
+			"type": "event",
+			"title": "你被-4°击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "210",
+			"time": "4631666",
+			"type": "event",
+			"title": "你击杀了YY1997",
+			"description": "使用M4A1 消音型",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "211",
+			"time": "4659398",
+			"type": "event",
+			"title": "回合开始20",
+			"description": "炼狱小镇",
+			"icon": "cs2_20",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "212",
+			"time": "4654398",
+			"type": "state_description",
+			"title": "第20回合"
+		}
+,
+		{
+			"id": "213",
+			"time": "4723167",
+			"type": "event",
+			"title": "你被YY1997击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "214",
+			"time": "4722233",
+			"type": "event",
+			"title": "你击杀了-4°",
+			"description": "使用M4A1 消音型",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "215",
+			"time": "4739864",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "216",
+			"time": "4740453",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "217",
+			"time": "4740735",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "218",
+			"time": "4741724",
+			"type": "gamemode",
+			"mode": 3
+		}
+
+	]
+,
+	"endtime": "4901548"
+}

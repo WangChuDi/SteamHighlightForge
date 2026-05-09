@@ -1,0 +1,61 @@
+# Default configuration for SteamHighlightForge
+
+# Steam game recordings path (relative or absolute)
+recordings_path: "./gamerecordings"
+
+# Output directory for exported highlights
+output_path: "./output"
+
+# Output video format
+output_format: "mp4"
+
+# Default buffer time (seconds) before/after highlight events
+buffer_before: 5.0
+buffer_after: 3.0
+
+# Merge clips that are within this many seconds of each other
+merge_threshold: 2.0
+
+# Game-specific settings
+games:
+  cs2:
+    app_id: 730
+    name: "Counter-Strike 2"
+    # Highlight types and their priorities (higher = more important)
+    highlight_types:
+      kill:
+        icons: ["cs2_gun_kill"]
+        buffer_before: 5.0
+        buffer_after: 2.0
+        priority: 2
+      multi_kill:
+        icons: ["cs2_multi_kill", "cs2_double_kill"]
+        buffer_before: 3.0
+        buffer_after: 3.0
+        priority: 3
+      death:
+        icons: ["cs2_death"]
+        buffer_before: 3.0
+        buffer_after: 1.0
+        priority: 1
+      bomb:
+        icons: ["cs2_bomb_plant", "cs2_bomb_explode", "cs2_bomb_defuse"]
+        buffer_before: 5.0
+        buffer_after: 5.0
+        priority: 1
+      ace:
+        icons: ["cs2_ace"]
+        buffer_before: 5.0
+        buffer_after: 5.0
+        priority: 5
+
+  # Template for adding new games
+  # dota2:
+  #   app_id: 570
+  #   name: "Dota 2"
+  #   highlight_types:
+  #     kill:
+  #       icons: ["dota2_kill"]
+  #       buffer_before: 5.0
+  #       buffer_after: 3.0
+  #       priority: 2

@@ -1,0 +1,32 @@
+{
+	"daterecorded": "1751294625",
+	"starttime": "0",
+	"entries": [
+		{
+			"id": "4",
+			"time": "29220",
+			"type": "usermarker",
+			"icon": "steam_marker",
+			"priority": 0
+		}
+,
+		{
+			"id": "3",
+			"time": "1999682",
+			"type": "usermarker",
+			"icon": "steam_marker",
+			"priority": 0
+		}
+,
+		{
+			"id": "5",
+			"time": "2384346",
+			"type": "usermarker",
+			"icon": "steam_marker",
+			"priority": 0
+		}
+
+	]
+,
+	"endtime": "3276377"
+}

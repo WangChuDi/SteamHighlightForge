@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Steam game recordings (large binary files)
+gamerecordings/video/
+*.m4s
+*.mpd
+
+# Output
+output/
+exports/
+
+# Config overrides
+config.local.yaml
+
+# Logs
+*.log

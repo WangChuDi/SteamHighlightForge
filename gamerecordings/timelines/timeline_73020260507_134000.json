@@ -1,0 +1,1141 @@
+{
+	"daterecorded": "1778161200",
+	"starttime": "0",
+	"entries": [
+		{
+			"id": "1603",
+			"time": "10376",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1604",
+			"time": "13931",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1605",
+			"time": "352969",
+			"type": "gamemode",
+			"mode": 4
+		}
+,
+		{
+			"id": "1606",
+			"time": "357472",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "1607",
+			"time": "390936",
+			"type": "event",
+			"title": "你被慈禧击杀",
+			"description": "使用USP消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1611",
+			"time": "397267",
+			"type": "phase",
+			"duration": "2125427",
+			"tags": [
+				{
+					"name": "竞技模式",
+					"icon": "cs2_logo",
+					"group": "模式",
+					"priority": 500
+				}
+,
+				{
+					"name": "死城之谜",
+					"icon": "map_icon_de_cache",
+					"group": "地图",
+					"priority": 500
+				}
+
+			]
+
+		}
+,
+		{
+			"id": "1608",
+			"time": "402267",
+			"type": "event",
+			"title": "回合开始1",
+			"description": "死城之谜",
+			"icon": "cs2_1",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1609",
+			"time": "397267",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "1610",
+			"time": "397267",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "1612",
+			"time": "467628",
+			"type": "event",
+			"title": "你击杀了虽虽",
+			"description": "使用格洛克18型",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1613",
+			"time": "478408",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "你安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 500,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1614",
+			"time": "490688",
+			"type": "event",
+			"title": "回合开始2",
+			"description": "死城之谜",
+			"icon": "cs2_2",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1615",
+			"time": "485688",
+			"type": "state_description",
+			"title": "第2回合"
+		}
+,
+		{
+			"id": "1616",
+			"time": "566102",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1617",
+			"time": "569816",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "1618",
+			"time": "651002",
+			"type": "event",
+			"title": "你击杀了肥仔",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1619",
+			"time": "682754",
+			"type": "event",
+			"title": "你击杀了76561199069764435",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1620",
+			"time": "704533",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "你安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 500,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1621",
+			"time": "745592",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1622",
+			"time": "757482",
+			"type": "event",
+			"title": "回合开始3",
+			"description": "死城之谜",
+			"icon": "cs2_3",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1623",
+			"time": "752482",
+			"type": "state_description",
+			"title": "第3回合"
+		}
+,
+		{
+			"id": "1624",
+			"time": "810003",
+			"type": "event",
+			"title": "你被我并不沉迷酒精击杀",
+			"description": "使用M4A1消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1625",
+			"time": "847065",
+			"type": "event",
+			"title": "回合开始4",
+			"description": "死城之谜",
+			"icon": "cs2_4",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1626",
+			"time": "842065",
+			"type": "state_description",
+			"title": "第4回合"
+		}
+,
+		{
+			"id": "1627",
+			"time": "869921",
+			"type": "event",
+			"title": "你被肥仔击杀",
+			"description": "使用M4A1消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1628",
+			"time": "869423",
+			"type": "event",
+			"title": "你击杀了慈禧",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1629",
+			"time": "910061",
+			"type": "event",
+			"title": "回合开始5",
+			"description": "死城之谜",
+			"icon": "cs2_5",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1630",
+			"time": "905061",
+			"type": "state_description",
+			"title": "第5回合"
+		}
+,
+		{
+			"id": "1631",
+			"time": "953717",
+			"type": "event",
+			"title": "你被我并不沉迷酒精击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1632",
+			"time": "968067",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "翡冷安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1633",
+			"time": "991265",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "76561199069764435拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1634",
+			"time": "1003296",
+			"type": "event",
+			"title": "回合开始6",
+			"description": "死城之谜",
+			"icon": "cs2_6",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1635",
+			"time": "998296",
+			"type": "state_description",
+			"title": "第6回合"
+		}
+,
+		{
+			"id": "1636",
+			"time": "1036033",
+			"type": "event",
+			"title": "你击杀了肥仔",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1637",
+			"time": "1061767",
+			"type": "event",
+			"title": "你击杀了慈禧",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1638",
+			"time": "1073750",
+			"type": "event",
+			"title": "回合开始7",
+			"description": "死城之谜",
+			"icon": "cs2_7",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1639",
+			"time": "1068750",
+			"type": "state_description",
+			"title": "第7回合"
+		}
+,
+		{
+			"id": "1640",
+			"time": "1069593",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1641",
+			"time": "1070020",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "1642",
+			"time": "1176698",
+			"type": "event",
+			"title": "你被慈禧击杀",
+			"description": "使用M4A1消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1643",
+			"time": "1188780",
+			"type": "event",
+			"title": "回合开始8",
+			"description": "死城之谜",
+			"icon": "cs2_8",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1644",
+			"time": "1183780",
+			"type": "state_description",
+			"title": "第8回合"
+		}
+,
+		{
+			"id": "1645",
+			"time": "1235729",
+			"type": "event",
+			"title": "你击杀了慈禧",
+			"description": "使用沙漠之鹰",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1646",
+			"time": "1247841",
+			"type": "event",
+			"title": "回合开始9",
+			"description": "死城之谜",
+			"icon": "cs2_9",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1647",
+			"time": "1242841",
+			"type": "state_description",
+			"title": "第9回合"
+		}
+,
+		{
+			"id": "1648",
+			"time": "1300411",
+			"type": "event",
+			"title": "你击杀了我并不沉迷酒精",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1649",
+			"time": "1306889",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "翡冷安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1650",
+			"time": "1321096",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了慈禧 and 虽虽 使用AK-47",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "7609",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "1651",
+			"time": "1347897",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1652",
+			"time": "1347897",
+			"type": "event",
+			"title": "你自杀了",
+			"description": "",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1653",
+			"time": "1344946",
+			"type": "event",
+			"title": "你击杀了76561199069764435",
+			"description": "使用沙漠之鹰",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1654",
+			"time": "1356974",
+			"type": "event",
+			"title": "回合开始10",
+			"description": "死城之谜",
+			"icon": "cs2_10",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1655",
+			"time": "1351974",
+			"type": "state_description",
+			"title": "第10回合"
+		}
+,
+		{
+			"id": "1656",
+			"time": "1382055",
+			"type": "event",
+			"title": "你被虽虽击杀",
+			"description": "使用法玛斯",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1657",
+			"time": "1380419",
+			"type": "event",
+			"title": "你击杀了慈禧",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1658",
+			"time": "1494080",
+			"type": "event",
+			"title": "回合开始11",
+			"description": "死城之谜",
+			"icon": "cs2_11",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1659",
+			"time": "1489080",
+			"type": "state_description",
+			"title": "第11回合"
+		}
+,
+		{
+			"id": "1660",
+			"time": "1541094",
+			"type": "event",
+			"title": "你被76561199069764435击杀",
+			"description": "使用M4A1消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1661",
+			"time": "1568206",
+			"type": "event",
+			"title": "回合开始12",
+			"description": "死城之谜",
+			"icon": "cs2_12",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1662",
+			"time": "1563207",
+			"type": "state_description",
+			"title": "第12回合"
+		}
+,
+		{
+			"id": "1663",
+			"time": "1601311",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "HuaXi安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1664",
+			"time": "1627282",
+			"type": "event",
+			"title": "你击杀了肥仔",
+			"description": "使用Tec-9",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1665",
+			"time": "1640690",
+			"type": "event",
+			"title": "你击杀了虽虽",
+			"description": "使用弯刀",
+			"icon": "cs2_knife_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1666",
+			"time": "1654273",
+			"type": "event",
+			"title": "回合开始13",
+			"description": "死城之谜",
+			"icon": "cs2_13",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1667",
+			"time": "1649273",
+			"type": "state_description",
+			"title": "第13回合"
+		}
+,
+		{
+			"id": "1668",
+			"time": "1684280",
+			"type": "event",
+			"title": "你被76561199069764435击杀",
+			"description": "使用格洛克18型",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1669",
+			"time": "1703725",
+			"type": "event",
+			"title": "回合开始14",
+			"description": "死城之谜",
+			"icon": "cs2_14",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1670",
+			"time": "1698725",
+			"type": "state_description",
+			"title": "第14回合"
+		}
+,
+		{
+			"id": "1671",
+			"time": "1751224",
+			"type": "event",
+			"title": "你被我并不沉迷酒精击杀",
+			"description": "使用沙漠之鹰",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1672",
+			"time": "1753893",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "虽虽安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1673",
+			"time": "1789894",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "HuaXi拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1674",
+			"time": "1801921",
+			"type": "event",
+			"title": "回合开始15",
+			"description": "死城之谜",
+			"icon": "cs2_15",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1675",
+			"time": "1796921",
+			"type": "state_description",
+			"title": "第15回合"
+		}
+,
+		{
+			"id": "1676",
+			"time": "1897377",
+			"type": "event",
+			"title": "你击杀了我并不沉迷酒精",
+			"description": "使用M4A4",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1677",
+			"time": "1902392",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "肥仔安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1678",
+			"time": "1904546",
+			"type": "event",
+			"title": "你击杀了肥仔",
+			"description": "使用M4A4",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1679",
+			"time": "1923348",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "你拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 500,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1680",
+			"time": "1935376",
+			"type": "event",
+			"title": "回合开始16",
+			"description": "死城之谜",
+			"icon": "cs2_16",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1681",
+			"time": "1930376",
+			"type": "state_description",
+			"title": "第16回合"
+		}
+,
+		{
+			"id": "1682",
+			"time": "1985496",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "76561199069764435安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1683",
+			"time": "1996888",
+			"type": "event",
+			"title": "你被虽虽击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1684",
+			"time": "2012434",
+			"type": "event",
+			"title": "回合开始17",
+			"description": "死城之谜",
+			"icon": "cs2_17",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1685",
+			"time": "2007434",
+			"type": "state_description",
+			"title": "第17回合"
+		}
+,
+		{
+			"id": "1686",
+			"time": "2036968",
+			"type": "event",
+			"title": "你被慈禧击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1687",
+			"time": "2055112",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "虽虽安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1688",
+			"time": "2079660",
+			"type": "event",
+			"title": "回合开始18",
+			"description": "死城之谜",
+			"icon": "cs2_18",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1689",
+			"time": "2074660",
+			"type": "state_description",
+			"title": "第18回合"
+		}
+,
+		{
+			"id": "1690",
+			"time": "2119420",
+			"type": "event",
+			"title": "你击杀了76561199069764435",
+			"description": "使用P2000",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1691",
+			"time": "2137872",
+			"type": "event",
+			"title": "你被虽虽击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1692",
+			"time": "2160544",
+			"type": "event",
+			"title": "回合开始19",
+			"description": "死城之谜",
+			"icon": "cs2_19",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1693",
+			"time": "2155544",
+			"type": "state_description",
+			"title": "第19回合"
+		}
+,
+		{
+			"id": "1694",
+			"time": "2194469",
+			"type": "event",
+			"title": "你被76561199069764435击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1695",
+			"time": "2208678",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "肥仔安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1696",
+			"time": "2242281",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "大花嘎嘎乱杀拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1697",
+			"time": "2254320",
+			"type": "event",
+			"title": "回合开始20",
+			"description": "死城之谜",
+			"icon": "cs2_20",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1698",
+			"time": "2249320",
+			"type": "state_description",
+			"title": "第20回合"
+		}
+,
+		{
+			"id": "1699",
+			"time": "2306265",
+			"type": "event",
+			"title": "你被慈禧击杀",
+			"description": "使用加利尔AR",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1700",
+			"time": "2338895",
+			"type": "event",
+			"title": "回合开始21",
+			"description": "死城之谜",
+			"icon": "cs2_21",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1701",
+			"time": "2333895",
+			"type": "state_description",
+			"title": "第21回合"
+		}
+,
+		{
+			"id": "1702",
+			"time": "2368424",
+			"type": "event",
+			"title": "你被我并不沉迷酒精击杀",
+			"description": "使用Tec-9",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1703",
+			"time": "2362722",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了慈禧 and 虽虽 使用M4A4",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "4718",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "1704",
+			"time": "2411113",
+			"type": "event",
+			"title": "回合开始22",
+			"description": "死城之谜",
+			"icon": "cs2_22",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1705",
+			"time": "2406113",
+			"type": "state_description",
+			"title": "第22回合"
+		}
+,
+		{
+			"id": "1706",
+			"time": "2457906",
+			"type": "event",
+			"title": "你击杀了我并不沉迷酒精",
+			"description": "使用M4A1消音版",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1707",
+			"time": "2521981",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1708",
+			"time": "2522694",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1709",
+			"time": "2523001",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "1710",
+			"time": "2523609",
+			"type": "gamemode",
+			"mode": 3
+		}
+
+	]
+,
+	"endtime": "2623646"
+}

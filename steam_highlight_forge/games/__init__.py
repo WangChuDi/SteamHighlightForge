@@ -1,0 +1,2 @@
+from steam_highlight_forge.games.base import GameHighlightConfig
+from steam_highlight_forge.games.cs2 import CS2HighlightConfig

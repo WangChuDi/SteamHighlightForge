@@ -1,0 +1,16 @@
+[project]
+name = "steam-highlight-forge"
+version = "0.1.0"
+description = "Auto-export game highlights from Steam Game Recording"
+requires-python = ">=3.9"
+dependencies = [
+    "pyyaml>=6.0",
+    "click>=8.0",
+]
+
+[project.scripts]
+shf = "steam_highlight_forge.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"

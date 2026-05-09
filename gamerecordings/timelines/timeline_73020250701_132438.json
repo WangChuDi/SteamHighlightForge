@@ -1,0 +1,1104 @@
+{
+	"daterecorded": "1751376278",
+	"starttime": "0",
+	"entries": [
+		{
+			"id": "6",
+			"time": "11327",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "7",
+			"time": "14570",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "8",
+			"time": "49126",
+			"type": "gamemode",
+			"mode": 4
+		}
+,
+		{
+			"id": "9",
+			"time": "59154",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "13",
+			"time": "60498",
+			"type": "phase",
+			"duration": "387200",
+			"tags": [
+				{
+					"name": "搭档模式",
+					"icon": "cs2_logo",
+					"group": "模式",
+					"priority": 500
+				}
+,
+				{
+					"name": "csstats",
+					"icon": "map_icon_csstats",
+					"group": "地图",
+					"priority": 500
+				}
+
+			]
+
+		}
+,
+		{
+			"id": "10",
+			"time": "65279",
+			"type": "event",
+			"title": "回合开始1",
+			"description": "csstats",
+			"icon": "cs2_1",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "11",
+			"time": "60279",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "12",
+			"time": "60498",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "14",
+			"time": "63391",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Ferris, 大尧, 亚尼, 康莱斯, 奈尔斯, and 艾菲 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "10687",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "15",
+			"time": "70391",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了阿多尼斯, 大尧, 欧文, 迪奥斯, 大尧, and Ferris 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7500",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "16",
+			"time": "74768",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 大尧, 欧文, 奈尔斯, 大尧, and 艾菲 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8046",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "17",
+			"time": "79436",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了亚尼, 康莱斯, 沃克斯, 艾菲, 阿多尼斯, and 大尧 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6890",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "18",
+			"time": "84393",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了沃克斯, 大尧, 阿多尼斯, 艾菲, 阿多尼斯, and 艾菲",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13859",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "19",
+			"time": "94704",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 阿多尼斯, 欧文, 康莱斯, 亚尼, and 迪奥斯 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8359",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "20",
+			"time": "100343",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, Ferris, 大尧, 大尧, 奈尔斯, and 欧文 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "12703",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "21",
+			"time": "111565",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了亚尼, 阿多尼斯, 亚尼, 欧文, 大尧, and 迪奥斯 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "10453",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "22",
+			"time": "118296",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 康莱斯, 大尧, Ferris, 艾菲, and 康莱斯 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9406",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "23",
+			"time": "124189",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了艾菲, Ferris, 艾菲, Ferris, 亚尼, and Ferris",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8390",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "24",
+			"time": "130185",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 奈尔斯, 迪奥斯, 沃克斯, 亚尼, and 康莱斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6203",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "25",
+			"time": "132826",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了阿多尼斯, 艾菲, 阿多尼斯, 亚尼, 康莱斯, and 艾菲 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7468",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "26",
+			"time": "137000",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了阿多尼斯, Ferris, 奈尔斯, 亚尼, 迪奥斯, and 康莱斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "5531",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "27",
+			"time": "139094",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 奈尔斯, 欧文, 沃克斯, Ferris, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7000",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "28",
+			"time": "143203",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了康莱斯, Ferris, 大尧, 奈尔斯, 康莱斯, and Ferris 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7250",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "29",
+			"time": "147331",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了艾菲, Ferris, 奈尔斯, Ferris, Ferris, and 康莱斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "10843",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "30",
+			"time": "154566",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了艾菲, 奈尔斯, 康莱斯, 阿多尼斯, 艾菲, and 阿多尼斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7562",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "31",
+			"time": "159284",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了亚尼, 大尧, 沃克斯, 大尧, 迪奥斯, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8046",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "32",
+			"time": "163701",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Ferris, 艾菲, 亚尼, 迪奥斯, 亚尼, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6578",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "33",
+			"time": "166686",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了康莱斯, 奈尔斯, 阿多尼斯, 奈尔斯, 沃克斯, and 阿多尼斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7250",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "34",
+			"time": "170563",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 大尧, 大尧, 阿多尼斯, 欧文, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8125",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "35",
+			"time": "175234",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了阿多尼斯, 亚尼, 大尧, 大尧, 迪奥斯, and 康莱斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7984",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "36",
+			"time": "179327",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Ferris, 亚尼, 艾菲, Ferris, 康莱斯, and 迪奥斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7125",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "37",
+			"time": "182858",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Ferris, 大尧, 康莱斯, 阿多尼斯, 欧文, and 亚尼 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8828",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "38",
+			"time": "188154",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了大尧, 沃克斯, 艾菲, 大尧, 艾菲, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8140",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "39",
+			"time": "198935",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "40",
+			"time": "200045",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "41",
+			"time": "193436",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了沃克斯, 阿多尼斯, 阿多尼斯, 奈尔斯, and 沃克斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6562",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "42",
+			"time": "213139",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "43",
+			"time": "213456",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "44",
+			"time": "235798",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了沃克斯, 阿多尼斯, 欧文, 艾菲, 大尧, and 艾菲 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8031",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "45",
+			"time": "240279",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了沃克斯, 大尧, 欧文, 康莱斯, 沃克斯, and 阿多尼斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8687",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "46",
+			"time": "303921",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了阿多尼斯, 沃克斯, 康莱斯, 欧文, 沃克斯, and 大尧 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6281",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "47",
+			"time": "308064",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了大尧, 欧文, 康莱斯, 阿多尼斯, 阿多尼斯, and 康莱斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7203",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "48",
+			"time": "312972",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了康莱斯, 大尧, 欧文, 康莱斯, 大尧, and 沃克斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8312",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "49",
+			"time": "319295",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了亚尼, 阿多尼斯, 奈尔斯, 迪奥斯, 亚尼, and 艾菲 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7359",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "50",
+			"time": "323076",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Ferris, 欧文, 艾菲, 康莱斯, 艾菲, and Ferris 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9062",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "51",
+			"time": "328564",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了康莱斯, 沃克斯, 大尧, 迪奥斯, 艾菲, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6531",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "52",
+			"time": "331467",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了康莱斯, 大尧, 欧文, 迪奥斯, 亚尼, and 沃克斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6437",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "53",
+			"time": "333969",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了阿多尼斯, 亚尼, 沃克斯, 欧文, 欧文, and 沃克斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8015",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "54",
+			"time": "340597",
+			"type": "event",
+			"title": "你击杀了艾菲",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "55",
+			"time": "343923",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 迪奥斯, 沃克斯, 阿多尼斯, 大尧, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6921",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "56",
+			"time": "347530",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了大尧, 阿多尼斯, Ferris, 亚尼, 阿多尼斯, and 大尧 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7468",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "57",
+			"time": "352000",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Ferris, 康莱斯, 沃克斯, 艾菲, 欧文, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "5968",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "58",
+			"time": "354608",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Ferris, 阿多尼斯, 大尧, 康莱斯, 迪奥斯, and Ferris 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6500",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "59",
+			"time": "358029",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了康莱斯, 康莱斯, 康莱斯, 欧文, 沃克斯, and 大尧",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "12359",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "60",
+			"time": "366937",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了沃克斯, 艾菲, Ferris, 艾菲, 大尧, and 沃克斯 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8515",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "61",
+			"time": "372766",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 康莱斯, Ferris, 亚尼, 艾菲, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "5500",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "62",
+			"time": "374782",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了迪奥斯, 欧文, 康莱斯, 欧文, 沃克斯, and 康莱斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9250",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "63",
+			"time": "380625",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了沃克斯, 艾菲, 康莱斯, 大尧, 奈尔斯, and Ferris 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7625",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "64",
+			"time": "384514",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 沃克斯, 迪奥斯, 亚尼, 亚尼, and 迪奥斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7812",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "65",
+			"time": "389718",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了沃克斯, 亚尼, 欧文, Ferris, 阿多尼斯, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11328",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "66",
+			"time": "398751",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Ferris, 康莱斯, 艾菲, 奈尔斯, 迪奥斯, and 沃克斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7031",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "67",
+			"time": "402286",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 阿多尼斯, 欧文, 大尧, 迪奥斯, and 大尧 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9593",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "68",
+			"time": "409938",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了亚尼, 大尧, 艾菲, 迪奥斯, 奈尔斯, and 康莱斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7562",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "69",
+			"time": "414608",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 艾菲, 迪奥斯, 艾菲, Ferris, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8796",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "70",
+			"time": "419594",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了艾菲, 迪奥斯, 沃克斯, 迪奥斯, 艾菲, and 大尧 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9546",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "71",
+			"time": "426124",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了沃克斯, 亚尼, Ferris, 康莱斯, 奈尔斯, and 阿多尼斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6421",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "72",
+			"time": "429018",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了艾菲, 欧文, 迪奥斯, 阿多尼斯, 奈尔斯, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6343",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "73",
+			"time": "432112",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了大尧, 奈尔斯, 亚尼, 奈尔斯, 亚尼, and Ferris 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7187",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "74",
+			"time": "435999",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了沃克斯, Ferris, 康莱斯, 沃克斯, Ferris, and 阿多尼斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6671",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "75",
+			"time": "438937",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了康莱斯, 大尧, 沃克斯, 亚尼, 欧文, and 艾菲 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7531",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "76",
+			"time": "445831",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "77",
+			"time": "447698",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "78",
+			"time": "483732",
+			"type": "gamemode",
+			"mode": 4
+		}
+,
+		{
+			"id": "79",
+			"time": "488373",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "80",
+			"time": "493155",
+			"type": "phase",
+			"duration": "269016",
+			"tags": [
+				{
+					"name": "自定义模式",
+					"icon": "cs2_logo",
+					"group": "模式",
+					"priority": 500
+				}
+,
+				{
+					"name": "dc-aim_training-dev",
+					"icon": "map_icon_dc-aim_training-dev",
+					"group": "地图",
+					"priority": 500
+				}
+
+			]
+
+		}
+,
+		{
+			"id": "81",
+			"time": "513139",
+			"type": "event",
+			"title": "你击杀了巴锡",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "82",
+			"time": "529015",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了巴锡, 米格尔, 尤里西斯, 乌尔里克, 米格尔, and 乌尔里克 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "19171",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "83",
+			"time": "545216",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了尤里西斯, 巴锡, 米格尔, 巴拿马, 巴锡, and 尤里西斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13078",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "84",
+			"time": "556988",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了米格尔, 托尼, 巴拿马, 尤里西斯, 乌尔里克, and 米格尔 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11718",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "85",
+			"time": "567064",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了托尼, 巴拿马, 尤里西斯, 乌尔里克, 米格尔, and 托尼 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "10906",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "86",
+			"time": "577017",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了尤里西斯, 乌尔里克, 米格尔, 巴锡, 托尼, and 乌尔里克 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "12359",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "87",
+			"time": "587452",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了米格尔, 巴拿马, 乌尔里克, 米格尔, 巴拿马, and 尤里西斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13750",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "88",
+			"time": "598718",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了托尼, 乌尔里克, 米格尔, 尤里西斯, 托尼, and 巴拿马 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "12312",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "89",
+			"time": "608531",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了乌尔里克, 尤里西斯, 米格尔, 托尼, 巴拿马, and 乌尔里克 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13187",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "90",
+			"time": "618612",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了米格尔, 尤里西斯, 巴锡, 托尼, 巴拿马, and 米格尔 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11234",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "91",
+			"time": "627233",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了乌尔里克, 米格尔, and 巴拿马 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9296",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "92",
+			"time": "637701",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了尤里西斯, 乌尔里克, 托尼, 巴拿马, 米格尔, and 尤里西斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "10593",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "93",
+			"time": "647719",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了乌尔里克, 托尼, 米格尔, 巴锡, and 尤里西斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8593",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "94",
+			"time": "664033",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了乌尔里克, 托尼, 巴锡, 米格尔, 尤里西斯, and 乌尔里克 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "10843",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "95",
+			"time": "674360",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了巴锡, 托尼, 米格尔, 巴拿马, 乌尔里克, and 巴锡 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11484",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "96",
+			"time": "685015",
+			"type": "event",
+			"title": "你击杀了米格尔",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "97",
+			"time": "719435",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了尤里西斯, 乌尔里克, 巴锡, 尤里西斯, 巴锡, and 巴拿马 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "15062",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "98",
+			"time": "731843",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了米格尔, 托尼, 尤里西斯, 巴锡, 尤里西斯, and 托尼 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13203",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "99",
+			"time": "745109",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了巴锡, 巴拿马, 米格尔, 托尼, 尤里西斯, and 巴锡 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "10203",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "100",
+			"time": "760626",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "101",
+			"time": "762171",
+			"type": "gamemode",
+			"mode": 3
+		}
+
+	]
+,
+	"endtime": "768754"
+}

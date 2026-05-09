@@ -1,0 +1,1860 @@
+{
+	"daterecorded": "1751207812",
+	"starttime": "0",
+	"entries": [
+		{
+			"id": "322",
+			"time": "10600",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "323",
+			"time": "13688",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "324",
+			"time": "53810",
+			"type": "gamemode",
+			"mode": 4
+		}
+,
+		{
+			"id": "325",
+			"time": "78015",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "329",
+			"time": "79842",
+			"type": "phase",
+			"duration": "2813",
+			"tags": [
+				{
+					"name": "搭档模式",
+					"icon": "cs2_logo",
+					"group": "模式",
+					"priority": 500
+				}
+,
+				{
+					"name": "csstats",
+					"icon": "map_icon_csstats",
+					"group": "地图",
+					"priority": 500
+				}
+
+			]
+
+		}
+,
+		{
+			"id": "333",
+			"time": "82655",
+			"type": "phase",
+			"duration": "201218",
+			"tags": [
+				{
+					"name": "自定义模式",
+					"icon": "cs2_logo",
+					"group": "模式",
+					"priority": 500
+				}
+,
+				{
+					"name": "csstats",
+					"icon": "map_icon_csstats",
+					"group": "地图",
+					"priority": 500
+				}
+
+			]
+
+		}
+,
+		{
+			"id": "326",
+			"time": "84842",
+			"type": "event",
+			"title": "回合开始1",
+			"description": "csstats",
+			"icon": "cs2_1",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "327",
+			"time": "79842",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "328",
+			"time": "79842",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "330",
+			"time": "87655",
+			"type": "event",
+			"title": "回合开始1",
+			"description": "csstats",
+			"icon": "cs2_1",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "331",
+			"time": "82655",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "332",
+			"time": "82655",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "334",
+			"time": "178571",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 沃尔特, Ferris, 拉里, 韦斯利, and 康莱斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6500",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "335",
+			"time": "181834",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Ferris, 康莱斯, 马耶尔, Ferris, 巴拿马, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11109",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "336",
+			"time": "192117",
+			"type": "event",
+			"title": "你击杀了巴拿马",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "337",
+			"time": "225615",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 巴拿马, Ferris, 约克, 康莱斯, and 巴拿马 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8062",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "338",
+			"time": "230484",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奥力, 康莱斯, 拉里, 奥力, 康莱斯, and 约克 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8671",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "339",
+			"time": "235671",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了沃尔特, 艾菲, 韦斯利, 沃尔特, 韦斯利, and Ferris 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8312",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "340",
+			"time": "240499",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了拉里, 巴拿马, 约克, 康莱斯, 马耶尔, and Ferris 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8125",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "341",
+			"time": "247235",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了约克, 奥力, and 马耶尔 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "4781",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "342",
+			"time": "253639",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奥力, 约克, 拉里, 奥力, 拉里, and 巴拿马 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9468",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "343",
+			"time": "281437",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "344",
+			"time": "283873",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "345",
+			"time": "287263",
+			"type": "gamemode",
+			"mode": 4
+		}
+,
+		{
+			"id": "346",
+			"time": "292045",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "350",
+			"time": "293419",
+			"type": "phase",
+			"duration": "1351844",
+			"tags": [
+				{
+					"name": "自定义模式",
+					"icon": "cs2_logo",
+					"group": "模式",
+					"priority": 500
+				}
+,
+				{
+					"name": "csstats",
+					"icon": "map_icon_csstats",
+					"group": "地图",
+					"priority": 500
+				}
+
+			]
+
+		}
+,
+		{
+			"id": "347",
+			"time": "298170",
+			"type": "event",
+			"title": "回合开始1",
+			"description": "csstats",
+			"icon": "cs2_1",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "348",
+			"time": "293170",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "349",
+			"time": "293419",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "351",
+			"time": "302737",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 欧文, 哈维, Telsen, 韦斯利, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7484",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "352",
+			"time": "306827",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, Telsen, 欧文, 欧文, 哈维, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7609",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "353",
+			"time": "310891",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 哈维, 欧文, 奈尔斯, Telsen, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7687",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "354",
+			"time": "315395",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 韦斯利, Telsen, 哈维, 奈尔斯, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8875",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "355",
+			"time": "320516",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 韦斯利, 奈尔斯, 哈维, 韦斯利, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9531",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "356",
+			"time": "326421",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, Telsen, 韦斯利, 哈维, 欧文, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7390",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "357",
+			"time": "330157",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 欧文, 哈维, 奈尔斯, 韦斯利, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7203",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "358",
+			"time": "333548",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 韦斯利, 奈尔斯, 欧文, Telsen, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7375",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "359",
+			"time": "337218",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 韦斯利, Telsen, 哈维, 奈尔斯, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7453",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "360",
+			"time": "341797",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, Telsen, 奈尔斯, 韦斯利, 奈尔斯, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7796",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "361",
+			"time": "346014",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 欧文, 哈维, 奈尔斯, 欧文, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9328",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "362",
+			"time": "354205",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "363",
+			"time": "357023",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "364",
+			"time": "356032",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 欧文, 韦斯利, Telsen, 哈维, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8046",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "365",
+			"time": "360577",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 韦斯利, 哈维, 哈维, 奈尔斯, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8984",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "366",
+			"time": "367484",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 奈尔斯, 韦斯利, 哈维, 奈尔斯, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8125",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "367",
+			"time": "371844",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 奈尔斯, Telsen, 哈维, 奈尔斯, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8265",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "368",
+			"time": "377423",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 奈尔斯, 哈维, Telsen, 奈尔斯, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7328",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "369",
+			"time": "381142",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 韦斯利, 哈维, 欧文, 奈尔斯, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6843",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "370",
+			"time": "385233",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 哈维, 哈维, 哈维, 奈尔斯, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11328",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "371",
+			"time": "393046",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 欧文, 哈维, 奈尔斯, Telsen, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8156",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "372",
+			"time": "398143",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 欧文, 哈维, 奈尔斯, 韦斯利, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8265",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "373",
+			"time": "402671",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 奈尔斯, 欧文, 韦斯利, 奈尔斯, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6406",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "374",
+			"time": "406173",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 韦斯利, 哈维, 欧文, 韦斯利, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7671",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "375",
+			"time": "410328",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 欧文, 韦斯利, 奈尔斯, 欧文, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7328",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "376",
+			"time": "414094",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 哈维, Telsen, 欧文, 韦斯利, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6859",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "377",
+			"time": "419218",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 奈尔斯, 欧文, 奈尔斯, Telsen, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8000",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "378",
+			"time": "423658",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, Telsen, 奈尔斯, 哈维, Telsen, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7781",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "379",
+			"time": "429061",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 韦斯利, 欧文, Telsen, 欧文, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7328",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "380",
+			"time": "433346",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 欧文, 奈尔斯, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11359",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "381",
+			"time": "481624",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 韦斯利, 奈尔斯, Telsen, 欧文, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7906",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "382",
+			"time": "486329",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 哈维, 奈尔斯, Telsen, 欧文, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7562",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "383",
+			"time": "490188",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 欧文, Telsen, 奈尔斯, 韦斯利, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7921",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "384",
+			"time": "494561",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 韦斯利, 哈维, 欧文, 奈尔斯, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8046",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "385",
+			"time": "502346",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 哈维, 欧文, 奈尔斯, 韦斯利, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9406",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "386",
+			"time": "508656",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 欧文, 哈维, Telsen, 欧文, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7406",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "387",
+			"time": "512420",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 奈尔斯, 韦斯利, 欧文, 奈尔斯, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8312",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "388",
+			"time": "517408",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 奈尔斯, 哈维, 欧文, 韦斯利, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6718",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "389",
+			"time": "520362",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, Telsen, 奈尔斯, 哈维, Telsen, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6859",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "390",
+			"time": "523299",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 韦斯利, 哈维, 韦斯利, Telsen, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7593",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "391",
+			"time": "528139",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 韦斯利, 哈维, 奈尔斯, 韦斯利, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6531",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "392",
+			"time": "530951",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 哈维, Telsen, 欧文, 韦斯利, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7656",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "393",
+			"time": "535139",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 韦斯利, 哈维, 奈尔斯, 欧文, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7265",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "394",
+			"time": "541391",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, Telsen, 韦斯利, 欧文, 哈维, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8187",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "395",
+			"time": "546547",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, Telsen, 韦斯利, 奈尔斯, 哈维, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6828",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "396",
+			"time": "550857",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 奈尔斯, 欧文, 奈尔斯, 韦斯利, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7156",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "397",
+			"time": "554390",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 奈尔斯, 哈维, 哈维, Telsen, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9390",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "398",
+			"time": "561000",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 奈尔斯, 欧文, 哈维, Telsen, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6859",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "399",
+			"time": "564545",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 欧文, 哈维, 欧文, 哈维, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8093",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "400",
+			"time": "569749",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 哈维, 奈尔斯, 欧文, Telsen, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6828",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "401",
+			"time": "572905",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, Telsen, 奈尔斯, Telsen, 欧文, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9718",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "402",
+			"time": "579076",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, Telsen, 哈维, 欧文, 奈尔斯, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7625",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "403",
+			"time": "583889",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, Telsen, 韦斯利, Telsen, 韦斯利, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "10375",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "404",
+			"time": "591109",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 哈维, 韦斯利, 哈维, 奈尔斯, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9046",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "405",
+			"time": "596561",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, Telsen, 奈尔斯, 韦斯利, Telsen, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7437",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "406",
+			"time": "600639",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 奈尔斯, 欧文, 韦斯利, 哈维, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7015",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "407",
+			"time": "606283",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 欧文, 哈维, 哈维, Telsen, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13890",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "408",
+			"time": "617938",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 韦斯利, Telsen, 欧文, 哈维, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9687",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "409",
+			"time": "625172",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, Telsen, 欧文, 奈尔斯, 哈维, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7078",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "410",
+			"time": "629640",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 欧文, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6046",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "411",
+			"time": "640467",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 欧文, 奈尔斯, 欧文, 欧文, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "16125",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "412",
+			"time": "656029",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 哈维, Telsen, Telsen, Telsen, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "20250",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "413",
+			"time": "673328",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 韦斯利, Telsen, 欧文, 奈尔斯, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "14765",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "414",
+			"time": "685686",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 欧文, 哈维, 哈维, 韦斯利, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "15343",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "415",
+			"time": "697877",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 奈尔斯, 欧文, 哈维, 欧文, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13562",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "416",
+			"time": "709015",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, Telsen, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6765",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "417",
+			"time": "728578",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, Telsen, 奈尔斯, 哈维, Telsen, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "14781",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "418",
+			"time": "740795",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 韦斯利, 欧文, 奈尔斯, 哈维, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11093",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "419",
+			"time": "748643",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 奈尔斯, 韦斯利, 欧文, 欧文, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "15640",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "420",
+			"time": "761734",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了Telsen and 韦斯利 使用AK-47",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "6875",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "421",
+			"time": "771451",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 欧文, 哈维, 奈尔斯, 哈维, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11281",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "422",
+			"time": "781076",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 奈尔斯, 韦斯利, 韦斯利, 哈维, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "14875",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "423",
+			"time": "792784",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 欧文, 韦斯利, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7156",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "424",
+			"time": "801158",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 奈尔斯, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6656",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "425",
+			"time": "809952",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 奈尔斯, 哈维, 韦斯利, 欧文, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11171",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "426",
+			"time": "818092",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 欧文, 哈维, 欧文, 韦斯利, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "12406",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "427",
+			"time": "828344",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 哈维, 韦斯利, 欧文, 哈维, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "10890",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "428",
+			"time": "835578",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 哈维, 韦斯利, 哈维, 欧文, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13609",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "429",
+			"time": "853140",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 欧文, 韦斯利, 韦斯利, 欧文, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "12500",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "430",
+			"time": "863296",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 哈维, 哈维, Telsen, 奈尔斯, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "16562",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "431",
+			"time": "878487",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, Telsen, 韦斯利, Telsen, 哈维, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "12953",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "432",
+			"time": "888953",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, Telsen, 韦斯利, Telsen, 哈维, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "10921",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "433",
+			"time": "896596",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了Telsen and 欧文 使用AK-47",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "6687",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "434",
+			"time": "904577",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 欧文, Telsen, 哈维, 奈尔斯, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13437",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "435",
+			"time": "916841",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 欧文, 欧文, 哈维, 奈尔斯, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "15375",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "436",
+			"time": "930202",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了欧文, 哈维, 欧文, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7406",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "437",
+			"time": "939624",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, Telsen, and Telsen 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7125",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "438",
+			"time": "954905",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 奈尔斯, 欧文, Telsen, and 奈尔斯 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "12093",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "439",
+			"time": "971467",
+			"type": "event",
+			"title": "你击杀了Telsen",
+			"description": "使用沙漠之鹰",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "440",
+			"time": "982768",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 韦斯利, and 韦斯利 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11968",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "441",
+			"time": "1022406",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 韦斯利, 哈维, 哈维, and 奈尔斯 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "15265",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "442",
+			"time": "1047201",
+			"type": "event",
+			"title": "你击杀了Telsen",
+			"description": "使用沙漠之鹰",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "443",
+			"time": "1054610",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, Telsen, Telsen, 哈维, 哈维, and 欧文",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "20562",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "444",
+			"time": "1071983",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 欧文, 韦斯利, 韦斯利, 哈维, and 奈尔斯",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "15140",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "445",
+			"time": "1086311",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了韦斯利, 哈维, 欧文, 奈尔斯, 奈尔斯, and 欧文 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "16140",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "446",
+			"time": "1099717",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 韦斯利, 韦斯利, 韦斯利, 奈尔斯, and 韦斯利 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13281",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "447",
+			"time": "1110221",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 哈维, Telsen, 奈尔斯, 韦斯利, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "10546",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "448",
+			"time": "1119843",
+			"type": "event",
+			"title": "你击杀了韦斯利",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "449",
+			"time": "1148015",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "450",
+			"time": "1148546",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "451",
+			"time": "1186536",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "452",
+			"time": "1186607",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "453",
+			"time": "1187217",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "454",
+			"time": "1187359",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "455",
+			"time": "1207389",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, Telsen, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6468",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "456",
+			"time": "1249858",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 奈尔斯, 哈维, Telsen, 哈维, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11640",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "457",
+			"time": "1258644",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, Telsen, 奈尔斯, 奈尔斯, 哈维, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13546",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "458",
+			"time": "1270514",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 奈尔斯, 奈尔斯, 哈维, Telsen, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "15734",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "459",
+			"time": "1283642",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 哈维, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7718",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "460",
+			"time": "1292562",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 奈尔斯, 奈尔斯, Telsen, Telsen, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "14500",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "461",
+			"time": "1308780",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 哈维, Telsen, and 哈维 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11562",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "462",
+			"time": "1326827",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 哈维, 奈尔斯, Telsen, 哈维, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11953",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "463",
+			"time": "1339079",
+			"type": "event",
+			"title": "你击杀了奈尔斯",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "464",
+			"time": "1345719",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Telsen, 奈尔斯, 奈尔斯, 哈维, 哈维, and 奈尔斯 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "19640",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "465",
+			"time": "1364567",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了哈维 and 哈维 使用AK-47",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "8156",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "466",
+			"time": "1379483",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了沃尔特, 约克, 哈维, 约克, 米格尔, and 米格尔 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "12953",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "467",
+			"time": "1389767",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了约克, 沃尔特, 奈尔斯, 哈维, 康莱斯, and Telsen 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8562",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "468",
+			"time": "1396045",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了哈维 and 约克",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "7750",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "469",
+			"time": "1443410",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 米格尔, 沃尔特, and 康莱斯 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "12140",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "470",
+			"time": "1463376",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了沃尔特 and 奈尔斯 使用SSG 08",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "6203",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "471",
+			"time": "1470984",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了康莱斯, 约克, 沃尔特, 约克, 奈尔斯, and 沃尔特 使用SSG 08",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "14781",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "472",
+			"time": "1486035",
+			"type": "event",
+			"title": "你击杀了康莱斯",
+			"description": "使用SSG 08",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "473",
+			"time": "1489439",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了康莱斯, 康莱斯, 米格尔, 约克, 奈尔斯, and 沃尔特",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13031",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "474",
+			"time": "1501378",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了康莱斯 and Telsen 使用沙漠之鹰",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "4656",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "475",
+			"time": "1520328",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了奈尔斯, 奈尔斯, and Telsen 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8421",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "476",
+			"time": "1532512",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "477",
+			"time": "1533670",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "478",
+			"time": "1594223",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "479",
+			"time": "1595815",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "480",
+			"time": "1600060",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了康莱斯, 米格尔, 米格尔, 约克, 哈维, and 沃尔特 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "17453",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "481",
+			"time": "1614264",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了哈维, 哈维, and 康莱斯 使用沙漠之鹰",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8578",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "482",
+			"time": "1629140",
+			"type": "event",
+			"title": "你击杀了米格尔",
+			"description": "使用沙漠之鹰",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "483",
+			"time": "1643295",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "484",
+			"time": "1645263",
+			"type": "gamemode",
+			"mode": 3
+		}
+
+	]
+,
+	"endtime": "1652088"
+}

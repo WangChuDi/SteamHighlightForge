@@ -1,0 +1,451 @@
+{
+	"daterecorded": "1761823873",
+	"starttime": "0",
+	"entries": [
+		{
+			"id": "21",
+			"time": "33601",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "22",
+			"time": "37733",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "23",
+			"time": "68250",
+			"type": "gamemode",
+			"mode": 4
+		}
+,
+		{
+			"id": "24",
+			"time": "73407",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "25",
+			"time": "75982",
+			"type": "phase",
+			"duration": "396847",
+			"tags": [
+				{
+					"name": "自定义模式",
+					"icon": "cs2_logo",
+					"group": "模式",
+					"priority": 500
+				}
+,
+				{
+					"name": "aim_botz",
+					"icon": "map_icon_aim_botz",
+					"group": "地图",
+					"priority": 500
+				}
+
+			]
+
+		}
+,
+		{
+			"id": "26",
+			"time": "87382",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r uLLeticaL, Aim Botz\r Anubis, Aim Botz\r Overwatcher, Aim Botz\r Overpass, Aim Botz\r uLLeticaL, and Aim Botz",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "15640",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "27",
+			"time": "100498",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Recoil Master  , Aim Botz\r is impressed!, Aim Botz\r Overpass, Aim Botz\r Recoil Master, Aim Botz\r Overpass",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "10812",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "28",
+			"time": "107906",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Recoil Master, Aim Botz\r Recoil Master  , Aim Botz\r Freddie, Aim Botz\r Recoil Master, Aim Botz\r uLLeticaL",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9140",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "29",
+			"time": "119903",
+			"type": "event",
+			"title": "你击杀了Aim Botz\r uLLeticaL",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "30",
+			"time": "126722",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Recoil Master  , Aim Botz\r Overwatcher, Aim Botz\r Overpass, Aim Botz\r Anubis, Aim Botz\r Recoil Master, an",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13421",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "31",
+			"time": "136616",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r <3 CS:GO, Aim Botz\r Anubis, Aim Botz\r is impressed!, Aim Botz\r Recoil Master  , Aim Botz\r Recoil Master  ",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9687",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "32",
+			"time": "144109",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r <3 CS:GO, Aim Botz\r Office, Aim Botz\r Overpass, Aim Botz\r <3 CS:GO, Aim Botz\r Anubis, and Aim Botz\r Dust2",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8687",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "33",
+			"time": "149879",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Recoil Master , Aim Botz\r Recoil Master, and Aim Botz\r is impressed! 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "6609",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "34",
+			"time": "165410",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r <3 CS:GO, Aim Botz\r Freddie, Aim Botz\r Recoil Master  , Aim Botz\r Office, Aim Botz\r Freddie, and Aim Botz",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9531",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "35",
+			"time": "171449",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Recoil Master, Aim Botz\r Overwatcher, Aim Botz\r uLLeticaL, Aim Botz\r Overpass, Aim Botz\r <3 CS:GO, and Ai",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11734",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "36",
+			"time": "179573",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Anubis, Aim Botz\r Recoil Master  , Aim Botz\r Dust2, Aim Botz\r Anubis, Aim Botz\r Recoil Master  , and Aim ",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9515",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "37",
+			"time": "185877",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r uLLeticaL, Aim Botz\r Recoil Master, Aim Botz\r Overwatcher, Aim Botz\r Office, Aim Botz\r Recoil Master  , a",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7546",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "38",
+			"time": "190002",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Recoil Master , Aim Botz\r Overpass, Aim Botz\r Anubis, Aim Botz\r Overwatcher, Aim Botz\r Recoil Master , an",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9203",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "39",
+			"time": "195655",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r is impressed!, Aim Botz\r <3 CS:GO, Aim Botz\r Anubis, Aim Botz\r Overpass, Aim Botz\r Freddie, and Aim Botz\r",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8328",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "40",
+			"time": "202599",
+			"type": "event",
+			"title": "你击杀了Aim Botz\r Dust2",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "41",
+			"time": "207520",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r uLLeticaL, Aim Botz\r Recoil Master, Aim Botz\r Anubis, Aim Botz\r <3 CS:GO, Aim Botz\r is impressed!, and Ai",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "11656",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "42",
+			"time": "217852",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Recoil Master  , Aim Botz\r Overpass, Aim Botz\r Freddie, Aim Botz\r Overpass, Aim Botz\r Recoil Master, and ",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9906",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "43",
+			"time": "224321",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Recoil Master , Aim Botz\r Office, and Aim Botz\r <3 CS:GO 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7765",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "44",
+			"time": "235304",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Office, Aim Botz\r uLLeticaL, Aim Botz\r Overwatcher, Aim Botz\r Anubis, Aim Botz\r Dust2, and Aim Botz\r Offi",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "15203",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "45",
+			"time": "246967",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了Aim Botz\r Overwatcher and Aim Botz\r <3 CS:GO 使用AK-47",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "5296",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "46",
+			"time": "274983",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Overwatcher, Aim Botz\r is impressed!, Aim Botz\r Office, Aim Botz\r is impressed!, Aim Botz\r Recoil Master ",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13656",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "47",
+			"time": "285302",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了Aim Botz\r Office and Aim Botz\r Dust2 使用AK-47",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "8531",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "48",
+			"time": "295433",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Anubis, Aim Botz\r Recoil Master  , Aim Botz\r Freddie, and Aim Botz\r is impressed! 使用AK-47",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "7328",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "49",
+			"time": "305357",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Dust2, Aim Botz\r uLLeticaL, Aim Botz\r <3 CS:GO, Aim Botz\r uLLeticaL, Aim Botz\r <3 CS:GO, and Aim Botz\r Ov",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9859",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "50",
+			"time": "311756",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r uLLeticaL, Aim Botz\r <3 CS:GO, Aim Botz\r Recoil Master, Aim Botz\r is impressed!, Aim Botz\r uLLeticaL, and",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9843",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "51",
+			"time": "319089",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Recoil Master  , Aim Botz\r Overpass, Aim Botz\r is impressed!, Aim Botz\r Office, Aim Botz\r uLLeticaL, and ",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9359",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "52",
+			"time": "324921",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Recoil Master, Aim Botz\r Dust2, Aim Botz\r <3 CS:GO, Aim Botz\r Overwatcher, Aim Botz\r Recoil Master , and ",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9062",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "53",
+			"time": "331094",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r uLLeticaL, Aim Botz\r Freddie, Aim Botz\r Recoil Master, and Aim Botz\r Freddie",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9250",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "54",
+			"time": "342638",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Recoil Master , Aim Botz\r Overwatcher, Aim Botz\r Anubis, Aim Botz\r uLLeticaL, Aim Botz\r is impressed!, an",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "8578",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "55",
+			"time": "349080",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Dust2, Aim Botz\r Recoil Master  , Aim Botz\r Recoil Master , Aim Botz\r Dust2, Aim Botz\r <3 CS:GO, and Aim ",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "9875",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "56",
+			"time": "357984",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Office, Aim Botz\r <3 CS:GO, Aim Botz\r Recoil Master, Aim Botz\r uLLeticaL, Aim Botz\r Anubis, and Aim Botz\r",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "13343",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "57",
+			"time": "369283",
+			"type": "event",
+			"title": "多重击杀",
+			"description": "你击杀了Aim Botz\r Italy, Aim Botz\r Recoil Master , Aim Botz\r Cache, Aim Botz\r Recoil Master, Aim Botz\r Botman, and Aim Botz",
+			"icon": "cs2_multi_kill",
+			"priority": 1000,
+			"duration": "20156",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "58",
+			"time": "459616",
+			"type": "gamemode",
+			"mode": 3
+		}
+
+	]
+,
+	"endtime": "472829"
+}

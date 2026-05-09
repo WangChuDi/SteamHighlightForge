@@ -1,0 +1,2294 @@
+{
+	"daterecorded": "1778069035",
+	"starttime": "0",
+	"entries": [
+		{
+			"id": "1037",
+			"time": "52064",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1038",
+			"time": "56932",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1039",
+			"time": "241754",
+			"type": "gamemode",
+			"mode": 4
+		}
+,
+		{
+			"id": "1040",
+			"time": "247068",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "1041",
+			"time": "273903",
+			"type": "event",
+			"title": "你被传奇捕虾仁击杀",
+			"description": "使用M4A4",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1045",
+			"time": "275356",
+			"type": "phase",
+			"duration": "172830",
+			"tags": [
+				{
+					"name": "竞技模式",
+					"icon": "cs2_logo",
+					"group": "模式",
+					"priority": 500
+				}
+,
+				{
+					"name": "死城之谜",
+					"icon": "map_icon_de_cache",
+					"group": "地图",
+					"priority": 500
+				}
+
+			]
+
+		}
+,
+		{
+			"id": "1042",
+			"time": "280356",
+			"type": "event",
+			"title": "回合开始1",
+			"description": "死城之谜",
+			"icon": "cs2_1",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1043",
+			"time": "275356",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "1044",
+			"time": "275356",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "1046",
+			"time": "308685",
+			"type": "event",
+			"title": "你被假如爱有天意击杀",
+			"description": "使用USP消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1047",
+			"time": "321901",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "翡冷安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1048",
+			"time": "347356",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1049",
+			"time": "348908",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "1050",
+			"time": "349194",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1051",
+			"time": "355449",
+			"type": "event",
+			"title": "回合开始2",
+			"description": "死城之谜",
+			"icon": "cs2_2",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1052",
+			"time": "350449",
+			"type": "state_description",
+			"title": "第2回合"
+		}
+,
+		{
+			"id": "1053",
+			"time": "351159",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "1054",
+			"time": "354813",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1055",
+			"time": "358174",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "1056",
+			"time": "422318",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "你安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 500,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1057",
+			"time": "446437",
+			"type": "event",
+			"title": "回合开始3",
+			"description": "死城之谜",
+			"icon": "cs2_3",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1058",
+			"time": "441437",
+			"type": "state_description",
+			"title": "第3回合"
+		}
+,
+		{
+			"id": "1059",
+			"time": "448186",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1060",
+			"time": "448473",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "1061",
+			"time": "449309",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1062",
+			"time": "452546",
+			"type": "gamemode",
+			"mode": 4
+		}
+,
+		{
+			"id": "1063",
+			"time": "457091",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "1064",
+			"time": "462293",
+			"type": "event",
+			"title": "回合开始3",
+			"description": "死城之谜",
+			"icon": "cs2_3",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1065",
+			"time": "457293",
+			"type": "state_description",
+			"title": "第3回合"
+		}
+,
+		{
+			"id": "1066",
+			"time": "507468",
+			"type": "event",
+			"title": "你被CxxxH击杀",
+			"description": "使用M4A1消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1067",
+			"time": "519556",
+			"type": "event",
+			"title": "回合开始4",
+			"description": "死城之谜",
+			"icon": "cs2_4",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1068",
+			"time": "514556",
+			"type": "state_description",
+			"title": "第4回合"
+		}
+,
+		{
+			"id": "1069",
+			"time": "560487",
+			"type": "event",
+			"title": "你被CxxxH击杀",
+			"description": "使用M4A1消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1070",
+			"time": "598309",
+			"type": "event",
+			"title": "回合开始5",
+			"description": "死城之谜",
+			"icon": "cs2_5",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1071",
+			"time": "593309",
+			"type": "state_description",
+			"title": "第5回合"
+		}
+,
+		{
+			"id": "1072",
+			"time": "621285",
+			"type": "event",
+			"title": "你击杀了CxxxH",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1073",
+			"time": "636620",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "你安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 500,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1074",
+			"time": "642998",
+			"type": "event",
+			"title": "你击杀了传奇捕虾仁",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1075",
+			"time": "652966",
+			"type": "event",
+			"title": "你击杀了幕后黑手老皮球1",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1076",
+			"time": "677687",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1077",
+			"time": "689573",
+			"type": "event",
+			"title": "回合开始6",
+			"description": "死城之谜",
+			"icon": "cs2_6",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1078",
+			"time": "684573",
+			"type": "state_description",
+			"title": "第6回合"
+		}
+,
+		{
+			"id": "1079",
+			"time": "743356",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "马富贵贵安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1080",
+			"time": "744532",
+			"type": "event",
+			"title": "你击杀了幕后黑手老皮球1",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1081",
+			"time": "770580",
+			"type": "event",
+			"title": "回合开始7",
+			"description": "死城之谜",
+			"icon": "cs2_7",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1082",
+			"time": "765580",
+			"type": "state_description",
+			"title": "第7回合"
+		}
+,
+		{
+			"id": "1083",
+			"time": "832061",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "永远的永远安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1084",
+			"time": "855750",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了CxxxH and 幕后黑手老皮球1 使用AK-47",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "4781",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "1085",
+			"time": "870581",
+			"type": "event",
+			"title": "回合开始8",
+			"description": "死城之谜",
+			"icon": "cs2_8",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1086",
+			"time": "865581",
+			"type": "state_description",
+			"title": "第8回合"
+		}
+,
+		{
+			"id": "1087",
+			"time": "917170",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "永远的永远安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1088",
+			"time": "924060",
+			"type": "event",
+			"title": "你被天生我材必自毙击杀",
+			"description": "使用法玛斯",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1089",
+			"time": "952469",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "幕后黑手老皮球1拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1090",
+			"time": "964356",
+			"type": "event",
+			"title": "回合开始9",
+			"description": "死城之谜",
+			"icon": "cs2_9",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1091",
+			"time": "959356",
+			"type": "state_description",
+			"title": "第9回合"
+		}
+,
+		{
+			"id": "1092",
+			"time": "1014118",
+			"type": "event",
+			"title": "你击杀了CxxxH",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1093",
+			"time": "1021797",
+			"type": "event",
+			"title": "你被传奇捕虾仁击杀",
+			"description": "使用M4A4",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1094",
+			"time": "1027842",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "翡冷安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1095",
+			"time": "1057228",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "假如爱有天意拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1096",
+			"time": "1069230",
+			"type": "event",
+			"title": "回合开始10",
+			"description": "死城之谜",
+			"icon": "cs2_10",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1097",
+			"time": "1064230",
+			"type": "state_description",
+			"title": "第10回合"
+		}
+,
+		{
+			"id": "1098",
+			"time": "1125292",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "大花嘎嘎乱杀安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1099",
+			"time": "1120704",
+			"type": "event",
+			"title": "你击杀了传奇捕虾仁",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1100",
+			"time": "1132684",
+			"type": "event",
+			"title": "回合开始11",
+			"description": "死城之谜",
+			"icon": "cs2_11",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1101",
+			"time": "1127684",
+			"type": "state_description",
+			"title": "第11回合"
+		}
+,
+		{
+			"id": "1102",
+			"time": "1167033",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了CxxxH and 传奇捕虾仁 使用AK-47",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "6125",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "1103",
+			"time": "1215765",
+			"type": "event",
+			"title": "你击杀了天生我材必自毙",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1104",
+			"time": "1223455",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "你安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 500,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1105",
+			"time": "1228880",
+			"type": "event",
+			"title": "回合开始12",
+			"description": "死城之谜",
+			"icon": "cs2_12",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1106",
+			"time": "1223880",
+			"type": "state_description",
+			"title": "第12回合"
+		}
+,
+		{
+			"id": "1107",
+			"time": "1293781",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "马富贵贵安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1108",
+			"time": "1301125",
+			"type": "event",
+			"title": "你击杀了CxxxH",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1109",
+			"time": "1314629",
+			"type": "event",
+			"title": "回合开始13",
+			"description": "死城之谜",
+			"icon": "cs2_13",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1110",
+			"time": "1309629",
+			"type": "state_description",
+			"title": "第13回合"
+		}
+,
+		{
+			"id": "1111",
+			"time": "1349027",
+			"type": "event",
+			"title": "你被幕后黑手老皮球1击杀",
+			"description": "使用格洛克18型",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1112",
+			"time": "1397903",
+			"type": "event",
+			"title": "回合开始14",
+			"description": "死城之谜",
+			"icon": "cs2_14",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1113",
+			"time": "1392903",
+			"type": "state_description",
+			"title": "第14回合"
+		}
+,
+		{
+			"id": "1114",
+			"time": "1429322",
+			"type": "event",
+			"title": "你被假如爱有天意击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1115",
+			"time": "1428313",
+			"type": "event",
+			"title": "你击杀了天生我材必自毙",
+			"description": "使用沙漠之鹰",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1116",
+			"time": "1456824",
+			"type": "event",
+			"title": "回合开始15",
+			"description": "死城之谜",
+			"icon": "cs2_15",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1117",
+			"time": "1451824",
+			"type": "state_description",
+			"title": "第15回合"
+		}
+,
+		{
+			"id": "1118",
+			"time": "1536060",
+			"type": "event",
+			"title": "你被假如爱有天意击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1119",
+			"time": "1549845",
+			"type": "event",
+			"title": "回合开始16",
+			"description": "死城之谜",
+			"icon": "cs2_16",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1120",
+			"time": "1544845",
+			"type": "state_description",
+			"title": "第16回合"
+		}
+,
+		{
+			"id": "1121",
+			"time": "1614520",
+			"type": "event",
+			"title": "你被幕后黑手老皮球1击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1122",
+			"time": "1625502",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "假如爱有天意安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1123",
+			"time": "1655733",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "永远的永远拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1124",
+			"time": "1667764",
+			"type": "event",
+			"title": "回合开始17",
+			"description": "死城之谜",
+			"icon": "cs2_17",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1125",
+			"time": "1662764",
+			"type": "state_description",
+			"title": "第17回合"
+		}
+,
+		{
+			"id": "1126",
+			"time": "1699527",
+			"type": "event",
+			"title": "你击杀了CxxxH",
+			"description": "使用M4A4",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1127",
+			"time": "1710047",
+			"type": "event",
+			"title": "你击杀了假如爱有天意",
+			"description": "使用M4A4",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1128",
+			"time": "1728070",
+			"type": "event",
+			"title": "你击杀了传奇捕虾仁",
+			"description": "使用M4A4",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1129",
+			"time": "1741557",
+			"type": "event",
+			"title": "你击杀了天生我材必自毙",
+			"description": "使用M4A4",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1130",
+			"time": "1753548",
+			"type": "event",
+			"title": "回合开始18",
+			"description": "死城之谜",
+			"icon": "cs2_18",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1131",
+			"time": "1748548",
+			"type": "state_description",
+			"title": "第18回合"
+		}
+,
+		{
+			"id": "1132",
+			"time": "1811734",
+			"type": "event",
+			"title": "你击杀了CxxxH",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1133",
+			"time": "1851490",
+			"type": "event",
+			"title": "回合开始19",
+			"description": "死城之谜",
+			"icon": "cs2_19",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1134",
+			"time": "1846490",
+			"type": "state_description",
+			"title": "第19回合"
+		}
+,
+		{
+			"id": "1135",
+			"time": "1899094",
+			"type": "event",
+			"title": "你被CxxxH击杀",
+			"description": "使用加利尔AR",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1136",
+			"time": "1909244",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "幕后黑手老皮球1安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1137",
+			"time": "1936499",
+			"type": "event",
+			"title": "回合开始20",
+			"description": "死城之谜",
+			"icon": "cs2_20",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1138",
+			"time": "1931499",
+			"type": "state_description",
+			"title": "第20回合"
+		}
+,
+		{
+			"id": "1139",
+			"time": "1968909",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "假如爱有天意安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1140",
+			"time": "2002233",
+			"type": "event",
+			"title": "你被天生我材必自毙击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1141",
+			"time": "2009964",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1142",
+			"time": "2021905",
+			"type": "event",
+			"title": "回合开始21",
+			"description": "死城之谜",
+			"icon": "cs2_21",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1143",
+			"time": "2016905",
+			"type": "state_description",
+			"title": "第21回合"
+		}
+,
+		{
+			"id": "1144",
+			"time": "2043871",
+			"type": "event",
+			"title": "你被CxxxH击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1145",
+			"time": "2064252",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "天生我材必自毙安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1146",
+			"time": "2078532",
+			"type": "event",
+			"title": "回合开始22",
+			"description": "死城之谜",
+			"icon": "cs2_22",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1147",
+			"time": "2073532",
+			"type": "state_description",
+			"title": "第22回合"
+		}
+,
+		{
+			"id": "1148",
+			"time": "2101517",
+			"type": "event",
+			"title": "你被天生我材必自毙击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1149",
+			"time": "2134522",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "天生我材必自毙安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1150",
+			"time": "2149874",
+			"type": "event",
+			"title": "回合开始23",
+			"description": "死城之谜",
+			"icon": "cs2_23",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1151",
+			"time": "2144874",
+			"type": "state_description",
+			"title": "第23回合"
+		}
+,
+		{
+			"id": "1152",
+			"time": "2214302",
+			"type": "event",
+			"title": "你被假如爱有天意击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1153",
+			"time": "2240672",
+			"type": "event",
+			"title": "回合开始24",
+			"description": "死城之谜",
+			"icon": "cs2_24",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1154",
+			"time": "2235672",
+			"type": "state_description",
+			"title": "第24回合"
+		}
+,
+		{
+			"id": "1155",
+			"time": "2301620",
+			"type": "event",
+			"title": "你被幕后黑手老皮球1击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1156",
+			"time": "2306967",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "假如爱有天意安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1157",
+			"time": "2325531",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1158",
+			"time": "2326236",
+			"type": "gamemode",
+			"mode": 3
+		}
+,
+		{
+			"id": "1159",
+			"time": "2650119",
+			"type": "gamemode",
+			"mode": 4
+		}
+,
+		{
+			"id": "1160",
+			"time": "2654907",
+			"type": "gamemode",
+			"mode": 1
+		}
+,
+		{
+			"id": "1161",
+			"time": "2676844",
+			"type": "event",
+			"title": "你被傲润姬击杀",
+			"description": "使用USP消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1162",
+			"time": "2676532",
+			"type": "event",
+			"title": "你击杀了dev1ce.Astralis",
+			"description": "使用格洛克18型",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1166",
+			"time": "2683731",
+			"type": "phase",
+			"duration": "1791960",
+			"tags": [
+				{
+					"name": "竞技模式",
+					"icon": "cs2_logo",
+					"group": "模式",
+					"priority": 500
+				}
+,
+				{
+					"name": "死城之谜",
+					"icon": "map_icon_de_cache",
+					"group": "地图",
+					"priority": 500
+				}
+
+			]
+
+		}
+,
+		{
+			"id": "1163",
+			"time": "2688731",
+			"type": "event",
+			"title": "回合开始1",
+			"description": "死城之谜",
+			"icon": "cs2_1",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1164",
+			"time": "2683731",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "1165",
+			"time": "2683731",
+			"type": "state_description",
+			"title": "第1回合"
+		}
+,
+		{
+			"id": "1167",
+			"time": "2720206",
+			"type": "event",
+			"title": "你击杀了宇宙超级无敌大衰哥QQ哥",
+			"description": "使用格洛克18型",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1168",
+			"time": "2726099",
+			"type": "event",
+			"title": "你击杀了傲润姬",
+			"description": "使用格洛克18型",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1169",
+			"time": "2733651",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "大花嘎嘎乱杀安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1170",
+			"time": "2746909",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了电子魅魔在哪里 and SavageCc 使用格洛克18型",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "4953",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "1171",
+			"time": "2762698",
+			"type": "event",
+			"title": "回合开始2",
+			"description": "死城之谜",
+			"icon": "cs2_2",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1172",
+			"time": "2757698",
+			"type": "state_description",
+			"title": "第2回合"
+		}
+,
+		{
+			"id": "1173",
+			"time": "2788965",
+			"type": "event",
+			"title": "你击杀了SavageCc",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1174",
+			"time": "2803405",
+			"type": "event",
+			"title": "你被宇宙超级无敌大衰哥QQ哥击杀",
+			"description": "使用MP9",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1175",
+			"time": "2869219",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "76561199550843364安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1176",
+			"time": "2882151",
+			"type": "event",
+			"title": "回合开始3",
+			"description": "死城之谜",
+			"icon": "cs2_3",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1177",
+			"time": "2877151",
+			"type": "state_description",
+			"title": "第3回合"
+		}
+,
+		{
+			"id": "1178",
+			"time": "2902686",
+			"type": "event",
+			"title": "你被SavageCc击杀",
+			"description": "使用M4A1消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1179",
+			"time": "2996980",
+			"type": "event",
+			"title": "回合开始4",
+			"description": "死城之谜",
+			"icon": "cs2_4",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1180",
+			"time": "2991980",
+			"type": "state_description",
+			"title": "第4回合"
+		}
+,
+		{
+			"id": "1181",
+			"time": "3033358",
+			"type": "event",
+			"title": "你被傲润姬击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1182",
+			"time": "3047185",
+			"type": "event",
+			"title": "回合开始5",
+			"description": "死城之谜",
+			"icon": "cs2_5",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1183",
+			"time": "3042185",
+			"type": "state_description",
+			"title": "第5回合"
+		}
+,
+		{
+			"id": "1184",
+			"time": "3099781",
+			"type": "event",
+			"title": "你被SavageCc击杀",
+			"description": "使用M4A1消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1185",
+			"time": "3169173",
+			"type": "event",
+			"title": "回合开始6",
+			"description": "死城之谜",
+			"icon": "cs2_6",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1186",
+			"time": "3164173",
+			"type": "state_description",
+			"title": "第6回合"
+		}
+,
+		{
+			"id": "1187",
+			"time": "3191013",
+			"type": "event",
+			"title": "你击杀了电子魅魔在哪里",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1188",
+			"time": "3218108",
+			"type": "event",
+			"title": "你被傲润姬击杀",
+			"description": "使用M4A1消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1189",
+			"time": "3220501",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "HuaXi安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1190",
+			"time": "3235260",
+			"type": "event",
+			"title": "炸弹已被拆除",
+			"description": "SavageCc拆除了炸弹",
+			"icon": "cs2_bomb_defused",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1191",
+			"time": "3247301",
+			"type": "event",
+			"title": "回合开始7",
+			"description": "死城之谜",
+			"icon": "cs2_7",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1192",
+			"time": "3242301",
+			"type": "state_description",
+			"title": "第7回合"
+		}
+,
+		{
+			"id": "1193",
+			"time": "3266489",
+			"type": "event",
+			"title": "你被SavageCc击杀",
+			"description": "使用AWP",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1194",
+			"time": "3303182",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "HuaXi安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1195",
+			"time": "3323512",
+			"type": "event",
+			"title": "回合开始8",
+			"description": "死城之谜",
+			"icon": "cs2_8",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1196",
+			"time": "3318512",
+			"type": "state_description",
+			"title": "第8回合"
+		}
+,
+		{
+			"id": "1197",
+			"time": "3360419",
+			"type": "event",
+			"title": "你被宇宙超级无敌大衰哥QQ哥击杀",
+			"description": "使用M4A1消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1198",
+			"time": "3387124",
+			"type": "event",
+			"title": "回合开始9",
+			"description": "死城之谜",
+			"icon": "cs2_9",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1199",
+			"time": "3382124",
+			"type": "state_description",
+			"title": "第9回合"
+		}
+,
+		{
+			"id": "1200",
+			"time": "3416039",
+			"type": "event",
+			"title": "双杀",
+			"description": "你击杀了电子魅魔在哪里 and 宇宙超级无敌大衰哥QQ哥 使用加利尔AR",
+			"icon": "cs2_double_kill",
+			"priority": 1000,
+			"duration": "6765",
+			"possible_clip": 3
+		}
+,
+		{
+			"id": "1201",
+			"time": "3432425",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "76561199550843364安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1202",
+			"time": "3438374",
+			"type": "event",
+			"title": "你击杀了dev1ce.Astralis",
+			"description": "使用加利尔AR",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1203",
+			"time": "3460340",
+			"type": "event",
+			"title": "回合开始10",
+			"description": "死城之谜",
+			"icon": "cs2_10",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1204",
+			"time": "3455340",
+			"type": "state_description",
+			"title": "第10回合"
+		}
+,
+		{
+			"id": "1205",
+			"time": "3519756",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "大花嘎嘎乱杀安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1206",
+			"time": "3560812",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1207",
+			"time": "3572780",
+			"type": "event",
+			"title": "回合开始11",
+			"description": "死城之谜",
+			"icon": "cs2_11",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1208",
+			"time": "3567780",
+			"type": "state_description",
+			"title": "第11回合"
+		}
+,
+		{
+			"id": "1209",
+			"time": "3603328",
+			"type": "event",
+			"title": "你击杀了电子魅魔在哪里",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1210",
+			"time": "3611580",
+			"type": "event",
+			"title": "你被傲润姬击杀",
+			"description": "使用沙漠之鹰",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1211",
+			"time": "3611765",
+			"type": "event",
+			"title": "你击杀了傲润姬",
+			"description": "使用焚烧",
+			"icon": "cs2_inferno_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1212",
+			"time": "3621698",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "翡冷安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1213",
+			"time": "3637949",
+			"type": "event",
+			"title": "回合开始12",
+			"description": "死城之谜",
+			"icon": "cs2_12",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1214",
+			"time": "3632949",
+			"type": "state_description",
+			"title": "第12回合"
+		}
+,
+		{
+			"id": "1215",
+			"time": "3701645",
+			"type": "event",
+			"title": "你被SavageCc击杀",
+			"description": "使用M4A1消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1216",
+			"time": "3741875",
+			"type": "event",
+			"title": "回合开始13",
+			"description": "死城之谜",
+			"icon": "cs2_13",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1217",
+			"time": "3736875",
+			"type": "state_description",
+			"title": "第13回合"
+		}
+,
+		{
+			"id": "1218",
+			"time": "3796637",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "dev1ce.Astralis安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1219",
+			"time": "3800018",
+			"type": "event",
+			"title": "你击杀了宇宙超级无敌大衰哥QQ哥",
+			"description": "使用P2000",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1220",
+			"time": "3812668",
+			"type": "event",
+			"title": "你被SavageCc击杀",
+			"description": "使用USP消音版",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1221",
+			"time": "3824660",
+			"type": "event",
+			"title": "回合开始14",
+			"description": "死城之谜",
+			"icon": "cs2_14",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1222",
+			"time": "3819660",
+			"type": "state_description",
+			"title": "第14回合"
+		}
+,
+		{
+			"id": "1223",
+			"time": "3850923",
+			"type": "event",
+			"title": "你被傲润姬击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1224",
+			"time": "3878204",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "dev1ce.Astralis安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1225",
+			"time": "3906111",
+			"type": "event",
+			"title": "回合开始15",
+			"description": "死城之谜",
+			"icon": "cs2_15",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1226",
+			"time": "3901111",
+			"type": "state_description",
+			"title": "第15回合"
+		}
+,
+		{
+			"id": "1227",
+			"time": "3977276",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "dev1ce.Astralis安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1228",
+			"time": "3976262",
+			"type": "event",
+			"title": "你击杀了宇宙超级无敌大衰哥QQ哥",
+			"description": "使用M4A4",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1229",
+			"time": "3994924",
+			"type": "event",
+			"title": "你被dev1ce.Astralis击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1230",
+			"time": "4006948",
+			"type": "event",
+			"title": "回合开始16",
+			"description": "死城之谜",
+			"icon": "cs2_16",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1231",
+			"time": "4001949",
+			"type": "state_description",
+			"title": "第16回合"
+		}
+,
+		{
+			"id": "1232",
+			"time": "4070715",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "SavageCc安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1233",
+			"time": "4075087",
+			"type": "event",
+			"title": "你被傲润姬击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1234",
+			"time": "4097515",
+			"type": "event",
+			"title": "回合开始17",
+			"description": "死城之谜",
+			"icon": "cs2_17",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1235",
+			"time": "4092515",
+			"type": "state_description",
+			"title": "第17回合"
+		}
+,
+		{
+			"id": "1236",
+			"time": "4138123",
+			"type": "event",
+			"title": "你击杀了电子魅魔在哪里",
+			"description": "使用M4A4",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1237",
+			"time": "4173761",
+			"type": "event",
+			"title": "你击杀了宇宙超级无敌大衰哥QQ哥",
+			"description": "使用M4A4",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1238",
+			"time": "4185813",
+			"type": "event",
+			"title": "回合开始18",
+			"description": "死城之谜",
+			"icon": "cs2_18",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1239",
+			"time": "4180813",
+			"type": "state_description",
+			"title": "第18回合"
+		}
+,
+		{
+			"id": "1240",
+			"time": "4230188",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "dev1ce.Astralis安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1241",
+			"time": "4251332",
+			"type": "event",
+			"title": "你击杀了宇宙超级无敌大衰哥QQ哥",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1242",
+			"time": "4259483",
+			"type": "event",
+			"title": "你击杀了电子魅魔在哪里",
+			"description": "使用AK-47",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1243",
+			"time": "4269421",
+			"type": "event",
+			"title": "你被dev1ce.Astralis击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1244",
+			"time": "4271206",
+			"type": "event",
+			"title": "炸弹已爆炸",
+			"description": "",
+			"icon": "cs2_bomb_exploded",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1245",
+			"time": "4281459",
+			"type": "event",
+			"title": "回合开始19",
+			"description": "死城之谜",
+			"icon": "cs2_19",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1246",
+			"time": "4276459",
+			"type": "state_description",
+			"title": "第19回合"
+		}
+,
+		{
+			"id": "1247",
+			"time": "4305418",
+			"type": "event",
+			"title": "你被SavageCc击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1248",
+			"time": "4340997",
+			"type": "event",
+			"title": "炸弹已安放",
+			"description": "dev1ce.Astralis安放了炸弹",
+			"icon": "cs2_bomb_plant",
+			"priority": 100,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1249",
+			"time": "4372076",
+			"type": "event",
+			"title": "回合开始20",
+			"description": "死城之谜",
+			"icon": "cs2_20",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+,
+		{
+			"id": "1250",
+			"time": "4367076",
+			"type": "state_description",
+			"title": "第20回合"
+		}
+,
+		{
+			"id": "1251",
+			"time": "4419344",
+			"type": "event",
+			"title": "你击杀了SavageCc",
+			"description": "使用M4A4",
+			"icon": "cs2_gun_kill",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 2
+		}
+,
+		{
+			"id": "1252",
+			"time": "4466407",
+			"type": "event",
+			"title": "你被宇宙超级无敌大衰哥QQ哥击杀",
+			"description": "使用AK-47",
+			"icon": "cs2_death",
+			"priority": 1000,
+			"duration": "0",
+			"possible_clip": 1
+		}
+
+	]
+,
+	"endtime": "4475691"
+}
