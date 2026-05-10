@@ -122,6 +122,7 @@ pub struct GameSession {
     pub date: String,
     pub duration_ms: u64,
     pub event_count: usize,
+    pub map_name: Option<String>,
 }
 
 impl Timeline {
@@ -162,6 +163,21 @@ impl Timeline {
                     .max()
                     .unwrap_or(0)
             })
+    }
+
+    pub fn get_map_name(&self) -> Option<String> {
+        for entry in &self.entries {
+            if entry.event_type == "phase" {
+                if let Some(tags) = &entry.tags {
+                    for tag in tags {
+                        if tag.group == "地图" || tag.group == "Map" {
+                            return Some(tag.name.clone());
+                        }
+                    }
+                }
+            }
+        }
+        None
     }
 }
 

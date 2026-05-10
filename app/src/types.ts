@@ -6,6 +6,7 @@ export interface GameSession {
   date: string;
   duration_ms: number;
   event_count: number;
+  map_name: string | null;
 }
 
 export interface TimelineEvent {

@@ -11,15 +11,20 @@ import './styles.css'
 
 const defaultTypes = ['kill', 'multi_kill']
 
-function inferMapName(timelinePath: string, timelineData?: TimelineData | null): string {
+function inferMapName(session: GameSession | null, timelineData?: TimelineData | null): string {
+  if (session?.map_name) return session.map_name
+
   if (timelineData?.entries) {
-    const roundEntry = timelineData.entries.find(
-      (e) => e.type === 'event' && e.description && e.title?.startsWith('回合开始'),
-    )
-    if (roundEntry?.description) return roundEntry.description
+    for (const entry of timelineData.entries) {
+      if (entry.type === 'phase' && entry.tags) {
+        const mapTag = entry.tags.find((t) => t.group === '地图')
+        if (mapTag) return mapTag.name
+      }
+    }
   }
 
-  const filename = timelinePath.split(/[\\/]/).pop() ?? ''
+  if (!session) return 'Unknown Map'
+  const filename = session.timeline_path.split(/[\\/]/).pop() ?? ''
   const clean = filename.replace('.json', '')
   const parts = clean.split('_')
   const tail = parts[parts.length - 1] ?? ''
@@ -236,7 +241,7 @@ function App() {
               togglePlayRef={videoTogglePlayRef}
               isLoading={isLoadingSession}
               gameName={selectedSession?.game_name ?? 'No Session'}
-              mapName={selectedSession ? inferMapName(selectedSession.timeline_path, timeline) : 'Unknown Map'}
+              mapName={inferMapName(selectedSession, timeline)}
             />
             <Timeline
               durationMs={durationMs}

@@ -36,8 +36,9 @@ interface GameGroup {
   sessions: GameSession[]
 }
 
-function inferMapName(timelinePath: string): string {
-  const filename = timelinePath.split(/[\\/]/).pop() ?? ''
+function getMapName(session: GameSession): string {
+  if (session.map_name) return session.map_name
+  const filename = session.timeline_path.split(/[\\/]/).pop() ?? ''
   const clean = filename.replace('.json', '')
   const parts = clean.split('_')
   const tail = parts[parts.length - 1] ?? ''
@@ -164,7 +165,7 @@ export function SessionList({
                 </button>
                 {!collapsed && visibleSessions.map((session) => {
                   const selected = selectedTimelinePath === session.timeline_path
-                  const mapName = inferMapName(session.timeline_path)
+                  const mapName = getMapName(session)
                   return (
                     <button
                       type="button"

@@ -269,6 +269,7 @@ fn scan_game_sessions(state: State<AppState>) -> Result<Vec<GameSession>, String
                     date: timeline.daterecorded.clone(),
                     duration_ms: timeline.get_duration_ms(),
                     event_count: timeline.entries.len(),
+                    map_name: timeline.get_map_name(),
                 });
             }
         }
