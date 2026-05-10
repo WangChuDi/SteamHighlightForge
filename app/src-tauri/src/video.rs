@@ -102,28 +102,13 @@ impl VideoProcessor {
             anyhow::bail!("No video chunks found in {:?}", session_dir);
         }
 
-        let video_list = session_dir.join("video_list.txt");
-        let mut video_list_content = format!("file '{}'\n", init_video.display());
-        for chunk in &video_chunks {
-            video_list_content.push_str(&format!("file '{}'\n", chunk.display()));
-        }
-        std::fs::write(&video_list, video_list_content)?;
-
         let temp_video = session_dir.join("temp_video.mp4");
-
-        let status = Command::new("ffmpeg")
-            .args(&[
-                "-f", "concat",
-                "-safe", "0",
-                "-i", video_list.to_str().unwrap(),
-                "-c", "copy",
-                temp_video.to_str().unwrap(),
-                "-y",
-            ])
-            .status()?;
-
-        if !status.success() {
-            anyhow::bail!("FFmpeg video merge failed");
+        {
+            let mut out = std::fs::File::create(&temp_video)?;
+            std::io::copy(&mut std::fs::File::open(&init_video)?, &mut out)?;
+            for chunk in &video_chunks {
+                std::io::copy(&mut std::fs::File::open(chunk)?, &mut out)?;
+            }
         }
 
         let mut audio_chunks: Vec<PathBuf> = std::fs::read_dir(session_dir)?
@@ -140,28 +125,13 @@ impl VideoProcessor {
         audio_chunks.sort();
 
         if !audio_chunks.is_empty() && init_audio.exists() {
-            let audio_list = session_dir.join("audio_list.txt");
-            let mut audio_list_content = format!("file '{}'\n", init_audio.display());
-            for chunk in &audio_chunks {
-                audio_list_content.push_str(&format!("file '{}'\n", chunk.display()));
-            }
-            std::fs::write(&audio_list, audio_list_content)?;
-
             let temp_audio = session_dir.join("temp_audio.mp4");
-
-            let status = Command::new("ffmpeg")
-                .args(&[
-                    "-f", "concat",
-                    "-safe", "0",
-                    "-i", audio_list.to_str().unwrap(),
-                    "-c", "copy",
-                    temp_audio.to_str().unwrap(),
-                    "-y",
-                ])
-                .status()?;
-
-            if !status.success() {
-                anyhow::bail!("FFmpeg audio merge failed");
+            {
+                let mut out = std::fs::File::create(&temp_audio)?;
+                std::io::copy(&mut std::fs::File::open(&init_audio)?, &mut out)?;
+                for chunk in &audio_chunks {
+                    std::io::copy(&mut std::fs::File::open(chunk)?, &mut out)?;
+                }
             }
 
             let status = Command::new("ffmpeg")
@@ -178,14 +148,12 @@ impl VideoProcessor {
                 anyhow::bail!("FFmpeg muxing failed");
             }
 
-            let _ = std::fs::remove_file(temp_audio);
-            let _ = std::fs::remove_file(audio_list);
+            let _ = std::fs::remove_file(&temp_audio);
         } else {
             std::fs::rename(&temp_video, output_file)?;
         }
 
-        let _ = std::fs::remove_file(temp_video);
-        let _ = std::fs::remove_file(video_list);
+        let _ = std::fs::remove_file(&temp_video);
 
         Ok(())
     }

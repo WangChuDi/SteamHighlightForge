@@ -52,3 +52,17 @@ export interface HighlightClip {
   round_number: number;
   icon: string;
 }
+
+export interface AppConfig {
+  recordings_path: string | null;
+  buffer_before_ms: number | null;
+  buffer_after_ms: number | null;
+  highlight_types: string[] | null;
+}
+
+export interface VideoChunks {
+  video_init: string;
+  audio_init: string | null;
+  video_chunks: string[];
+  audio_chunks: string[];
+}

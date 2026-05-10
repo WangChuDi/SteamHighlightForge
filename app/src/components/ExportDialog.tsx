@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { convertFileSrc, invoke } from '@tauri-apps/api/core'
+import { invoke } from '@tauri-apps/api/core'
 import { open } from '@tauri-apps/plugin-dialog'
 import type { HighlightClip } from '../types'
 
@@ -31,7 +31,11 @@ export function ExportDialog({
   const [previewFile, setPreviewFile] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
 
-  const previewUrl = useMemo(() => (previewFile ? convertFileSrc(previewFile) : ''), [previewFile])
+  const previewUrl = useMemo(() => {
+    if (!previewFile) return ''
+    const encoded = encodeURIComponent(previewFile).replace(/%2F/g, '/')
+    return `stream://localhost/${encoded}`
+  }, [previewFile])
 
   if (!isOpen) {
     return null

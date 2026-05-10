@@ -3,33 +3,194 @@ mod video;
 mod highlights;
 
 use std::path::{Path, PathBuf};
-use tauri::State;
+use tauri::{Manager, State};
 use std::sync::Mutex;
 use serde::{Serialize, Deserialize};
 
-use timeline::{Timeline, GameSession, extract_app_id_from_filename, get_game_name};
-use video::{VideoProcessor, VideoSegment};
+use timeline::{Timeline, GameSession, extract_app_id_from_filename, extract_date_from_filename, get_game_name};
+use video::VideoProcessor;
 use highlights::{get_extractor, HighlightClip, RoundInfo};
+
+fn handle_stream_request(request: &tauri::http::Request<Vec<u8>>) -> tauri::http::Response<Vec<u8>> {
+    use std::io::{Read, Seek, SeekFrom};
+
+    let uri = request.uri().to_string();
+    // URI format: stream://localhost/<encoded-path>
+    let path_str = uri
+        .strip_prefix("stream://localhost/")
+        .or_else(|| uri.strip_prefix("stream://localhost"))
+        .unwrap_or("");
+    let path_str = percent_encoding::percent_decode_str(path_str)
+        .decode_utf8_lossy()
+        .to_string();
+
+    let path = Path::new(&path_str);
+    if !path.exists() {
+        return tauri::http::Response::builder()
+            .status(404)
+            .body(b"File not found".to_vec())
+            .unwrap();
+    }
+
+    let file_size = match std::fs::metadata(path) {
+        Ok(m) => m.len(),
+        Err(_) => {
+            return tauri::http::Response::builder()
+                .status(500)
+                .body(b"Cannot read file metadata".to_vec())
+                .unwrap();
+        }
+    };
+
+    let mime = if path_str.ends_with(".mp4") || path_str.ends_with(".m4s") {
+        "video/mp4"
+    } else if path_str.ends_with(".m4a") {
+        "audio/mp4"
+    } else {
+        "application/octet-stream"
+    };
+
+    // Parse Range header
+    let range_header = request.headers().get("range")
+        .and_then(|v| v.to_str().ok())
+        .unwrap_or("");
+
+    if range_header.starts_with("bytes=") {
+        let range_spec = &range_header[6..];
+        let parts: Vec<&str> = range_spec.split('-').collect();
+        let start: u64 = parts[0].parse().unwrap_or(0);
+        let end: u64 = if parts.len() > 1 && !parts[1].is_empty() {
+            parts[1].parse().unwrap_or(file_size - 1)
+        } else {
+            // Serve up to 2MB chunks for range requests
+            std::cmp::min(start + 2 * 1024 * 1024 - 1, file_size - 1)
+        };
+
+        let length = end - start + 1;
+        let mut file = match std::fs::File::open(path) {
+            Ok(f) => f,
+            Err(_) => {
+                return tauri::http::Response::builder()
+                    .status(500)
+                    .body(b"Cannot open file".to_vec())
+                    .unwrap();
+            }
+        };
+
+        if file.seek(SeekFrom::Start(start)).is_err() {
+            return tauri::http::Response::builder()
+                .status(500)
+                .body(b"Seek failed".to_vec())
+                .unwrap();
+        }
+
+        let mut buffer = vec![0u8; length as usize];
+        let bytes_read = file.read(&mut buffer).unwrap_or(0);
+        buffer.truncate(bytes_read);
+
+        tauri::http::Response::builder()
+            .status(206)
+            .header("Content-Type", mime)
+            .header("Content-Length", bytes_read.to_string())
+            .header("Content-Range", format!("bytes {}-{}/{}", start, start + bytes_read as u64 - 1, file_size))
+            .header("Accept-Ranges", "bytes")
+            .header("Access-Control-Allow-Origin", "*")
+            .body(buffer)
+            .unwrap()
+    } else {
+        // No range request - return full file info with Accept-Ranges
+        // For large files, just return headers to let the client make range requests
+        if file_size > 10 * 1024 * 1024 {
+            // For large files, return first 2MB
+            let mut file = match std::fs::File::open(path) {
+                Ok(f) => f,
+                Err(_) => {
+                    return tauri::http::Response::builder()
+                        .status(500)
+                        .body(b"Cannot open file".to_vec())
+                        .unwrap();
+                }
+            };
+            let chunk_size = std::cmp::min(2 * 1024 * 1024, file_size as usize);
+            let mut buffer = vec![0u8; chunk_size];
+            let bytes_read = file.read(&mut buffer).unwrap_or(0);
+            buffer.truncate(bytes_read);
+
+            tauri::http::Response::builder()
+                .status(200)
+                .header("Content-Type", mime)
+                .header("Content-Length", file_size.to_string())
+                .header("Accept-Ranges", "bytes")
+                .header("Access-Control-Allow-Origin", "*")
+                .body(buffer)
+                .unwrap()
+        } else {
+            // Small file - return entire content
+            let data = std::fs::read(path).unwrap_or_default();
+            tauri::http::Response::builder()
+                .status(200)
+                .header("Content-Type", mime)
+                .header("Content-Length", data.len().to_string())
+                .header("Accept-Ranges", "bytes")
+                .header("Access-Control-Allow-Origin", "*")
+                .body(data)
+                .unwrap()
+        }
+    }
+}
+
+#[derive(Default, Serialize, Deserialize)]
+struct AppConfig {
+    recordings_path: Option<String>,
+    buffer_before_ms: Option<u64>,
+    buffer_after_ms: Option<u64>,
+    highlight_types: Option<Vec<String>>,
+}
+
+impl AppConfig {
+    fn config_path(app: &tauri::AppHandle) -> PathBuf {
+        let data_dir = app.path().app_data_dir().unwrap_or_else(|_| PathBuf::from("."));
+        data_dir.join("config.json")
+    }
+
+    fn load(app: &tauri::AppHandle) -> Self {
+        let path = Self::config_path(app);
+        std::fs::read_to_string(&path)
+            .ok()
+            .and_then(|content| serde_json::from_str(&content).ok())
+            .unwrap_or_default()
+    }
+
+    fn save(&self, app: &tauri::AppHandle) -> Result<(), String> {
+        let path = Self::config_path(app);
+        if let Some(parent) = path.parent() {
+            std::fs::create_dir_all(parent)
+                .map_err(|e| format!("Failed to create config directory: {}", e))?;
+        }
+        let content = serde_json::to_string_pretty(self)
+            .map_err(|e| format!("Failed to serialize config: {}", e))?;
+        std::fs::write(&path, content)
+            .map_err(|e| format!("Failed to write config: {}", e))?;
+        Ok(())
+    }
+}
 
 #[derive(Default)]
 struct AppState {
     recordings_path: Mutex<Option<PathBuf>>,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
-struct ExportProgress {
-    current: usize,
-    total: usize,
-    status: String,
-}
-
 #[tauri::command]
-fn set_recordings_path(path: String, state: State<AppState>) -> Result<(), String> {
-    let path_buf = PathBuf::from(path);
+fn set_recordings_path(path: String, state: State<AppState>, app: tauri::AppHandle) -> Result<(), String> {
+    let path_buf = PathBuf::from(&path);
     if !path_buf.exists() {
         return Err("Path does not exist".to_string());
     }
     *state.recordings_path.lock().unwrap() = Some(path_buf);
+
+    let mut config = AppConfig::load(&app);
+    config.recordings_path = Some(path);
+    config.save(&app)?;
     Ok(())
 }
 
@@ -40,6 +201,28 @@ fn get_recordings_path(state: State<AppState>) -> Option<String> {
         .unwrap()
         .as_ref()
         .map(|p| p.to_string_lossy().to_string())
+}
+
+#[tauri::command]
+fn load_config(app: tauri::AppHandle) -> AppConfig {
+    AppConfig::load(&app)
+}
+
+#[tauri::command]
+fn save_config(
+    recordings_path: Option<String>,
+    buffer_before_ms: Option<u64>,
+    buffer_after_ms: Option<u64>,
+    highlight_types: Option<Vec<String>>,
+    app: tauri::AppHandle,
+) -> Result<(), String> {
+    let config = AppConfig {
+        recordings_path,
+        buffer_before_ms,
+        buffer_after_ms,
+        highlight_types,
+    };
+    config.save(&app)
 }
 
 #[tauri::command]
@@ -74,7 +257,8 @@ fn scan_game_sessions(state: State<AppState>) -> Result<Vec<GameSession>, String
             if let Ok(timeline) = Timeline::from_file(&path) {
                 let video_dir = recordings_path.join("video");
                 let processor = VideoProcessor::new(video_dir);
-                let video_path = processor.find_video_session(app_id, None);
+                let date_pattern = extract_date_from_filename(filename);
+                let video_path = processor.find_video_session(app_id, date_pattern.as_deref());
 
                 sessions.push(GameSession {
                     app_id,
@@ -112,10 +296,10 @@ fn get_rounds(timeline_path: String) -> Result<Vec<RoundInfo>, String> {
     let app_id = extract_app_id_from_filename(filename)
         .ok_or("Cannot extract app_id from filename")?;
 
-    let extractor = get_extractor(app_id)
-        .ok_or(format!("No extractor for app_id {}", app_id))?;
-
-    Ok(extractor.extract_rounds(&timeline))
+    match get_extractor(app_id) {
+        Some(extractor) => Ok(extractor.extract_rounds(&timeline)),
+        None => Ok(Vec::new()),
+    }
 }
 
 #[tauri::command]
@@ -137,16 +321,16 @@ fn extract_highlights(
     let app_id = extract_app_id_from_filename(filename)
         .ok_or("Cannot extract app_id from filename")?;
 
-    let extractor = get_extractor(app_id)
-        .ok_or(format!("No extractor for app_id {}", app_id))?;
-
-    Ok(extractor.extract_highlights(
-        &timeline,
-        &highlight_types,
-        round_number,
-        buffer_before_ms,
-        buffer_after_ms,
-    ))
+    match get_extractor(app_id) {
+        Some(extractor) => Ok(extractor.extract_highlights(
+            &timeline,
+            &highlight_types,
+            round_number,
+            buffer_before_ms,
+            buffer_after_ms,
+        )),
+        None => Ok(Vec::new()),
+    }
 }
 
 #[tauri::command]
@@ -156,6 +340,10 @@ async fn merge_video(
 ) -> Result<String, String> {
     let session_dir = Path::new(&session_path);
     let output = Path::new(&output_path);
+
+    if output.exists() {
+        return Ok(output.to_string_lossy().to_string());
+    }
 
     if let Some(parent) = output.parent() {
         std::fs::create_dir_all(parent)
@@ -167,7 +355,7 @@ async fn merge_video(
         .to_path_buf();
 
     let processor = VideoProcessor::new(video_dir);
-    
+
     processor.merge_m4s_chunks(session_dir, output)
         .map_err(|e| format!("Failed to merge video: {}", e))?;
 
@@ -214,6 +402,67 @@ fn check_ffmpeg() -> Result<bool, String> {
         .map_err(|e| e.to_string())
 }
 
+#[derive(Serialize)]
+struct VideoChunks {
+    video_init: String,
+    audio_init: Option<String>,
+    video_chunks: Vec<String>,
+    audio_chunks: Vec<String>,
+}
+
+#[tauri::command]
+fn get_video_chunks(session_path: String) -> Result<VideoChunks, String> {
+    let session_dir = PathBuf::from(&session_path);
+    if !session_dir.exists() {
+        return Err("Video session directory not found".to_string());
+    }
+
+    let video_init = session_dir.join("init-stream0.m4s");
+    if !video_init.exists() {
+        return Err("Video init segment not found".to_string());
+    }
+
+    let audio_init = session_dir.join("init-stream1.m4s");
+
+    let mut video_chunks: Vec<PathBuf> = std::fs::read_dir(&session_dir)
+        .map_err(|e| format!("Failed to read session dir: {}", e))?
+        .filter_map(|e| e.ok())
+        .map(|e| e.path())
+        .filter(|p| {
+            p.file_name()
+                .and_then(|n| n.to_str())
+                .map(|n| n.starts_with("chunk-stream0-") && n.ends_with(".m4s"))
+                .unwrap_or(false)
+        })
+        .collect();
+    video_chunks.sort();
+
+    let mut audio_chunks: Vec<PathBuf> = std::fs::read_dir(&session_dir)
+        .map_err(|e| format!("Failed to read session dir: {}", e))?
+        .filter_map(|e| e.ok())
+        .map(|e| e.path())
+        .filter(|p| {
+            p.file_name()
+                .and_then(|n| n.to_str())
+                .map(|n| n.starts_with("chunk-stream1-") && n.ends_with(".m4s"))
+                .unwrap_or(false)
+        })
+        .collect();
+    audio_chunks.sort();
+
+    Ok(VideoChunks {
+        video_init: video_init.to_string_lossy().to_string(),
+        audio_init: if audio_init.exists() { Some(audio_init.to_string_lossy().to_string()) } else { None },
+        video_chunks: video_chunks.iter().map(|p| p.to_string_lossy().to_string()).collect(),
+        audio_chunks: audio_chunks.iter().map(|p| p.to_string_lossy().to_string()).collect(),
+    })
+}
+
+#[tauri::command]
+async fn read_binary_file(path: String) -> Result<Vec<u8>, String> {
+    std::fs::read(&path).map_err(|e| format!("Failed to read file: {}", e))
+}
+
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
@@ -221,6 +470,12 @@ pub fn run() {
         .plugin(tauri_plugin_fs::init())
         .plugin(tauri_plugin_shell::init())
         .manage(AppState::default())
+        .register_asynchronous_uri_scheme_protocol("stream", |_ctx, request, responder| {
+            std::thread::spawn(move || {
+                let response = handle_stream_request(&request);
+                responder.respond(response);
+            });
+        })
         .setup(|app| {
             if cfg!(debug_assertions) {
                 app.handle().plugin(
@@ -229,11 +484,23 @@ pub fn run() {
                         .build(),
                 )?;
             }
+
+            let config = AppConfig::load(app.handle());
+            if let Some(path) = config.recordings_path {
+                let path_buf = PathBuf::from(&path);
+                if path_buf.exists() {
+                    let state = app.state::<AppState>();
+                    *state.recordings_path.lock().unwrap() = Some(path_buf);
+                }
+            }
+
             Ok(())
         })
         .invoke_handler(tauri::generate_handler![
             set_recordings_path,
             get_recordings_path,
+            load_config,
+            save_config,
             scan_game_sessions,
             load_timeline,
             get_rounds,
@@ -241,6 +508,8 @@ pub fn run() {
             merge_video,
             export_highlight_clips,
             check_ffmpeg,
+            get_video_chunks,
+            read_binary_file,
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");

@@ -14,6 +14,12 @@
     "fs:allow-read-text-file",
     "fs:allow-exists",
     "shell:default",
-    "shell:allow-execute"
+    "shell:allow-execute",
+    {
+      "identifier": "fs:allow-read-file",
+      "allow": [
+        { "path": "**" }
+      ]
+    }
   ]
 }

@@ -39,6 +39,7 @@ pub struct RoundInfo {
     pub end_time_ms: u64,
 }
 
+#[allow(unused)]
 pub trait GameHighlightExtractor {
     fn app_id(&self) -> u32;
     fn game_name(&self) -> &str;

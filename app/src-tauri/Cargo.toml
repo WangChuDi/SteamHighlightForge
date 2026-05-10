@@ -1,6 +1,6 @@
 [package]
 name = "steam-highlight-forge"
-version = "0.1.0"
+version = "0.0.1"
 description = "Steam Game Recording Highlight Exporter"
 authors = ["you"]
 license = "MIT"
@@ -12,16 +12,17 @@ name = "app_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
-tauri-build = { version = "2" }
+tauri-build = { version = "2", features = [] }
 
 [dependencies]
 serde_json = "1"
 serde = { version = "1", features = ["derive"] }
 log = "0.4"
-tauri = { version = "2" }
+tauri = { version = "2", features = ["protocol-asset"] }
 tauri-plugin-log = "2"
 tauri-plugin-dialog = "2"
 tauri-plugin-fs = "2"
 tauri-plugin-shell = "2"
 tokio = { version = "1", features = ["full"] }
 anyhow = "1"
+percent-encoding = "2"

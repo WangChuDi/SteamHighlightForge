@@ -1,6 +1,7 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { invoke } from '@tauri-apps/api/core'
-import type { GameSession, HighlightClip, RoundInfo, Timeline as TimelineData, TimelineEvent } from './types'
+import { getCurrentWindow } from '@tauri-apps/api/window'
+import type { AppConfig, GameSession, HighlightClip, RoundInfo, Timeline as TimelineData, TimelineEvent, VideoChunks } from './types'
 import { SessionList } from './components/SessionList'
 import { Timeline } from './components/Timeline'
 import { VideoPreview } from './components/VideoPreview'
@@ -9,6 +10,28 @@ import { ExportDialog } from './components/ExportDialog'
 import './styles.css'
 
 const defaultTypes = ['kill', 'multi_kill']
+
+function inferMapName(timelinePath: string, timelineData?: TimelineData | null): string {
+  if (timelineData?.entries) {
+    const roundEntry = timelineData.entries.find(
+      (e) => e.type === 'event' && e.description && e.title?.startsWith('回合开始'),
+    )
+    if (roundEntry?.description) return roundEntry.description
+  }
+
+  const filename = timelinePath.split(/[\\/]/).pop() ?? ''
+  const clean = filename.replace('.json', '')
+  const parts = clean.split('_')
+  const tail = parts[parts.length - 1] ?? ''
+
+  if (!tail || /^\d+$/.test(tail)) {
+    return 'Unknown Map'
+  }
+
+  return tail
+    .replace(/[-_]/g, ' ')
+    .replace(/\b\w/g, (char) => char.toUpperCase())
+}
 
 export function clipKey(clip: HighlightClip, index: number): string {
   return `${index}-${clip.start_time_ms}-${clip.end_time_ms}-${clip.clip_type}-${clip.round_number}`
@@ -31,9 +54,27 @@ function App() {
   const [isExtracting, setIsExtracting] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [mergedVideoPath, setMergedVideoPath] = useState<string | null>(null)
+  const [videoChunks, setVideoChunks] = useState<VideoChunks | null>(null)
   const [videoTimeMs, setVideoTimeMs] = useState(0)
   const [seekToMs, setSeekToMs] = useState<number | null>(null)
+  const [isPlaying, setIsPlaying] = useState(false)
   const [isExportDialogOpen, setIsExportDialogOpen] = useState(false)
+  const videoTogglePlayRef = useRef<(() => void) | null>(null)
+
+  useEffect(() => {
+    invoke<AppConfig>('load_config').then((config) => {
+      if (config.recordings_path) {
+        setRecordingsPath(config.recordings_path)
+        invoke('set_recordings_path', { path: config.recordings_path })
+          .then(() => invoke<GameSession[]>('scan_game_sessions'))
+          .then((result) => setSessions(result))
+          .catch(() => {})
+      }
+      if (config.buffer_before_ms != null) setBufferBeforeMs(config.buffer_before_ms)
+      if (config.buffer_after_ms != null) setBufferAfterMs(config.buffer_after_ms)
+      if (config.highlight_types != null) setHighlightTypes(config.highlight_types)
+    }).catch(() => {})
+  }, [])
 
   const durationMs = useMemo(() => {
     if (selectedSession) {
@@ -88,6 +129,7 @@ function App() {
       setIsLoadingSession(true)
       setSelectedSession(session)
       setMergedVideoPath(null)
+      setVideoChunks(null)
       const [sessionTimeline, sessionRounds] = await Promise.all([
         invoke<TimelineData>('load_timeline', { timelinePath: session.timeline_path }),
         invoke<RoundInfo[]>('get_rounds', { timelinePath: session.timeline_path }),
@@ -98,6 +140,17 @@ function App() {
       setSelectedClipKeys([])
       setSeekToMs(0)
       setVideoTimeMs(0)
+
+      if (session.video_path) {
+        invoke<VideoChunks>('get_video_chunks', { sessionPath: session.video_path })
+          .then((chunks) => setVideoChunks(chunks))
+          .catch(() => {})
+
+        const outputPath = session.video_path + '/merged_preview.mp4'
+        invoke<string>('merge_video', { sessionPath: session.video_path, outputPath })
+          .then((path) => setMergedVideoPath(path))
+          .catch((err) => console.error('merge_video failed:', err))
+      }
     } catch (sessionError) {
       setError(sessionError instanceof Error ? sessionError.message : String(sessionError))
     } finally {
@@ -143,72 +196,88 @@ function App() {
   }
 
   return (
-    <div className="app-shell">
-      <aside className="sidebar">
-        <h1 className="app-title">Steam Highlight Forge</h1>
-        <SessionList
-          recordingsPath={recordingsPath}
-          sessions={sessions}
-          selectedTimelinePath={selectedSession?.timeline_path ?? null}
-          isScanning={isScanning}
-          onPathSelected={setPathAndScan}
-          onRescan={scanSessions}
-          onSelectSession={loadSession}
-        />
-      </aside>
+    <div className="app-root">
+      <header className="titlebar" data-tauri-drag-region>
+        <div className="titlebar-left" data-tauri-drag-region>
+          <div className="titlebar-icon" aria-hidden="true">SF</div>
+          <div className="titlebar-texts" data-tauri-drag-region>
+            <h1 data-tauri-drag-region>Steam Highlight Forge</h1>
+            <p data-tauri-drag-region>Game highlight auto-export tool</p>
+          </div>
+        </div>
+        <div className="titlebar-right">
+          <button type="button" className="titlebar-settings-btn">Settings</button>
+          <div className="window-controls" aria-hidden="true">
+            <button type="button" className="window-control" onClick={() => getCurrentWindow().minimize()}>—</button>
+            <button type="button" className="window-control" onClick={() => getCurrentWindow().toggleMaximize()}>▢</button>
+            <button type="button" className="window-control close" onClick={() => getCurrentWindow().close()}>✕</button>
+          </div>
+        </div>
+      </header>
 
-      <main className="main-content">
-        {error && <div className="error-banner">{error}</div>}
+      {error && <div className="error-banner">{error}</div>}
 
-        <div className="panel-grid">
-          <section className="panel timeline-panel">
-            <h2>Timeline</h2>
+      <div className="app-layout">
+        <aside className="left-sidebar">
+          <SessionList
+            recordingsPath={recordingsPath}
+            sessions={sessions}
+            selectedTimelinePath={selectedSession?.timeline_path ?? null}
+            isScanning={isScanning}
+            onPathSelected={setPathAndScan}
+            onRescan={scanSessions}
+            onSelectSession={loadSession}
+          />
+        </aside>
+
+        <main className="center-player">
+          <section className="player-shell">
+            <VideoPreview
+              videoPath={mergedVideoPath}
+              videoChunks={videoChunks}
+              seekToMs={seekToMs}
+              onTimeUpdate={setVideoTimeMs}
+              onPlayStateChange={setIsPlaying}
+              togglePlayRef={videoTogglePlayRef}
+              isLoading={isLoadingSession}
+              gameName={selectedSession?.game_name ?? 'No Session'}
+              mapName={selectedSession ? inferMapName(selectedSession.timeline_path, timeline) : 'Unknown Map'}
+            />
             <Timeline
               durationMs={durationMs}
               currentTimeMs={videoTimeMs}
               events={timeline?.entries ?? []}
               rounds={rounds}
+              isPlaying={isPlaying}
               onSeek={handleSeek}
               onEventSeek={onTimelineEventSeek}
+              onTogglePlay={() => videoTogglePlayRef.current?.()}
             />
           </section>
+        </main>
 
-          <section className="panel video-panel">
-            <h2>Video Preview</h2>
-            <VideoPreview
-              videoPath={mergedVideoPath}
-              events={timeline?.entries ?? []}
-              seekToMs={seekToMs}
-              onTimeUpdate={setVideoTimeMs}
-              onSeek={handleSeek}
-              isLoading={isLoadingSession}
-            />
-          </section>
-
-          <section className="panel highlights-panel">
-            <h2>Highlights</h2>
-            <HighlightPanel
-              rounds={rounds}
-              clips={clips}
-              selectedRound={selectedRound}
-              selectedClipKeys={selectedClipSet}
-              highlightTypes={highlightTypes}
-              bufferBeforeMs={bufferBeforeMs}
-              bufferAfterMs={bufferAfterMs}
-              isExtracting={isExtracting}
-              onRoundChange={setSelectedRound}
-              onTypeChange={setHighlightTypes}
-              onBufferBeforeChange={setBufferBeforeMs}
-              onBufferAfterChange={setBufferAfterMs}
-              onExtract={extractHighlights}
-              onToggleClip={toggleClipSelection}
-              onSeekClip={handleSeek}
-              onOpenExport={() => setIsExportDialogOpen(true)}
-              clipKey={clipKey}
-            />
-          </section>
-        </div>
-      </main>
+        <aside className="right-highlights">
+          <HighlightPanel
+            rounds={rounds}
+            clips={clips}
+            selectedRound={selectedRound}
+            selectedClipKeys={selectedClipSet}
+            highlightTypes={highlightTypes}
+            bufferBeforeMs={bufferBeforeMs}
+            bufferAfterMs={bufferAfterMs}
+            isExtracting={isExtracting}
+            onRoundChange={setSelectedRound}
+            onTypeChange={setHighlightTypes}
+            onBufferBeforeChange={setBufferBeforeMs}
+            onBufferAfterChange={setBufferAfterMs}
+            onExtract={extractHighlights}
+            onToggleClip={toggleClipSelection}
+            onSeekClip={handleSeek}
+            onOpenExport={() => setIsExportDialogOpen(true)}
+            clipKey={clipKey}
+          />
+        </aside>
+      </div>
 
       <ExportDialog
         open={isExportDialogOpen}
