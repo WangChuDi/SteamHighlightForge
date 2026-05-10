@@ -145,11 +145,6 @@ function App() {
         invoke<VideoChunks>('get_video_chunks', { sessionPath: session.video_path })
           .then((chunks) => setVideoChunks(chunks))
           .catch(() => {})
-
-        const outputPath = session.video_path + '/merged_preview.mp4'
-        invoke<string>('merge_video', { sessionPath: session.video_path, outputPath })
-          .then((path) => setMergedVideoPath(path))
-          .catch((err) => console.error('merge_video failed:', err))
       }
     } catch (sessionError) {
       setError(sessionError instanceof Error ? sessionError.message : String(sessionError))

@@ -6,6 +6,7 @@ use std::path::{Path, PathBuf};
 use tauri::{Manager, State};
 use std::sync::Mutex;
 use serde::{Serialize, Deserialize};
+use base64::Engine;
 
 use timeline::{Timeline, GameSession, extract_app_id_from_filename, extract_date_from_filename, get_game_name};
 use video::VideoProcessor;
@@ -459,8 +460,9 @@ fn get_video_chunks(session_path: String) -> Result<VideoChunks, String> {
 }
 
 #[tauri::command]
-async fn read_binary_file(path: String) -> Result<Vec<u8>, String> {
-    std::fs::read(&path).map_err(|e| format!("Failed to read file: {}", e))
+async fn read_binary_file(path: String) -> Result<String, String> {
+    let data = std::fs::read(&path).map_err(|e| format!("Failed to read file: {}", e))?;
+    Ok(base64::engine::general_purpose::STANDARD.encode(&data))
 }
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]

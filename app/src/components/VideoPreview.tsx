@@ -1,4 +1,5 @@
 import { type MutableRefObject, useEffect, useMemo, useRef, useState } from 'react'
+import { invoke } from '@tauri-apps/api/core'
 
 interface VideoChunks {
   video_init: string
@@ -142,12 +143,14 @@ export function VideoPreview({ videoPath, videoChunks, seekToMs, onTimeUpdate, o
     sourceUrlRef.current = objectUrl
     video.src = objectUrl
 
-    const readBinaryFile = (path: string) => {
-      const encoded = encodeURIComponent(path).replace(/%2F/g, '/')
-      return fetch(`stream://localhost/${encoded}`).then((res) => {
-        if (!res.ok) throw new Error(`Failed to fetch ${path}: ${res.status}`)
-        return res.arrayBuffer()
-      }).then((buf) => new Uint8Array(buf))
+    const readBinaryFile = async (path: string): Promise<Uint8Array> => {
+      const b64 = await invoke<string>('read_binary_file', { path })
+      const binary = atob(b64)
+      const bytes = new Uint8Array(binary.length)
+      for (let i = 0; i < binary.length; i++) {
+        bytes[i] = binary.charCodeAt(i)
+      }
+      return bytes
     }
 
     const enqueueAppend = (buffer: SourceBuffer, payload: Uint8Array) => {
@@ -232,7 +235,7 @@ export function VideoPreview({ videoPath, videoChunks, seekToMs, onTimeUpdate, o
 
         await loadChunkRange(0, Math.min(CHUNK_BATCH_SIZE - 1, videoChunks.video_chunks.length - 1))
       } catch (err) {
-        console.warn('MSE playback failed, falling back to merged video:', err)
+        console.error('MSE playback init failed:', err)
         setMseSupported(false)
       }
     }
@@ -294,7 +297,7 @@ export function VideoPreview({ videoPath, videoChunks, seekToMs, onTimeUpdate, o
              {isLoading ? 'Loading session...' : 'Select a session with video to preview'}
            </div>
          ) : videoChunks && !videoPath && !mseSupported ? (
-           <div className="empty-state">Merging video for preview...</div>
+           <div className="empty-state">Video codec not supported by this browser engine</div>
          ) : (
            <video
              ref={videoRef}
