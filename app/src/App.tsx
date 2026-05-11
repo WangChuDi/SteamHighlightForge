@@ -60,6 +60,7 @@ function App() {
   const [error, setError] = useState<string | null>(null)
   const [edlUri, setEdlUri] = useState<string | null>(null)
   const [videoTimeMs, setVideoTimeMs] = useState(0)
+  const [videoDurationMs, setVideoDurationMs] = useState(0)
   const [seekToMs, setSeekToMs] = useState<number | null>(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [isExportDialogOpen, setIsExportDialogOpen] = useState(false)
@@ -91,6 +92,7 @@ function App() {
   }, [])
 
   const durationMs = useMemo(() => {
+    if (videoDurationMs > 0) return videoDurationMs
     if (selectedSession) {
       return selectedSession.duration_ms
     }
@@ -98,7 +100,7 @@ function App() {
       return timeline.entries[timeline.entries.length - 1].time
     }
     return 0
-  }, [selectedSession, timeline])
+  }, [videoDurationMs, selectedSession, timeline])
 
   const selectedClipSet = useMemo(() => new Set(selectedClipKeys), [selectedClipKeys])
   const selectedClips = useMemo(
@@ -144,6 +146,7 @@ function App() {
       setSelectedSession(session)
       setEdlUri(null)
       setMergedVideoPath(null)
+      setVideoDurationMs(0)
       const [sessionTimeline, sessionRounds] = await Promise.all([
         invoke<TimelineData>('load_timeline', { timelinePath: session.timeline_path }),
         invoke<RoundInfo[]>('get_rounds', { timelinePath: session.timeline_path }),
@@ -250,6 +253,7 @@ function App() {
               edlUri={edlUri}
               seekToMs={seekToMs}
               onTimeUpdate={setVideoTimeMs}
+              onDurationChange={setVideoDurationMs}
               onPlayStateChange={setIsPlaying}
               togglePlayRef={videoTogglePlayRef}
               isLoading={isLoadingSession}

@@ -500,22 +500,21 @@ async fn get_edl_uri(session_path: String) -> Result<String, String> {
         .collect();
     audio_chunks.sort();
 
-    let session_path_str = session_dir.to_string_lossy().to_string();
-    let sep = if cfg!(windows) { "\\" } else { "/" };
+    let session_path_str = session_dir.to_string_lossy().replace('\\', "/");
 
     let mut parts: Vec<String> = Vec::new();
 
     parts.push("!new_stream".to_string());
-    parts.push(format!("!mp4_dash,init={}{}{}", session_path_str, sep, "init-stream0.m4s"));
+    parts.push(format!("!mp4_dash,init={}/{}", session_path_str, "init-stream0.m4s"));
     for chunk in &video_chunks {
-        parts.push(format!("{}{}{}", session_path_str, sep, chunk));
+        parts.push(format!("{}/{}", session_path_str, chunk));
     }
 
     if init_audio.exists() && !audio_chunks.is_empty() {
         parts.push("!new_stream".to_string());
-        parts.push(format!("!mp4_dash,init={}{}{}", session_path_str, sep, "init-stream1.m4s"));
+        parts.push(format!("!mp4_dash,init={}/{}", session_path_str, "init-stream1.m4s"));
         for chunk in &audio_chunks {
-            parts.push(format!("{}{}{}", session_path_str, sep, chunk));
+            parts.push(format!("{}/{}", session_path_str, chunk));
         }
     }
 

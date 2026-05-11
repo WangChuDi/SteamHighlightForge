@@ -6,6 +6,7 @@ interface VideoPreviewProps {
   edlUri: string | null
   seekToMs: number | null
   onTimeUpdate: (timeMs: number) => void
+  onDurationChange: (durationMs: number) => void
   onPlayStateChange: (playing: boolean) => void
   togglePlayRef: MutableRefObject<(() => void) | null>
   isLoading: boolean
@@ -13,9 +14,10 @@ interface VideoPreviewProps {
   mapName: string
 }
 
-export function VideoPreview({ videoPath, edlUri, seekToMs, onTimeUpdate, onPlayStateChange, togglePlayRef, isLoading, gameName, mapName }: VideoPreviewProps) {
+export function VideoPreview({ videoPath, edlUri, seekToMs, onTimeUpdate, onDurationChange, onPlayStateChange, togglePlayRef, isLoading, gameName, mapName }: VideoPreviewProps) {
   const mpv = useMpv({
     onTimeUpdate,
+    onDurationChange,
     onPlayStateChange,
   })
 

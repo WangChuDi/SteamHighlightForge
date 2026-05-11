@@ -39,7 +39,6 @@ export function useMpv(options: UseMpvOptions = {}) {
             'hwdec': 'auto-safe',
             'vo': 'gpu',
             'keep-open': 'yes',
-            'force-window': 'yes',
             'pause': 'yes',
             'osd-level': '0',
             'input-default-bindings': 'no',
