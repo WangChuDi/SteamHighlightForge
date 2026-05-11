@@ -170,7 +170,8 @@ impl Timeline {
             if entry.event_type == "phase" {
                 if let Some(tags) = &entry.tags {
                     for tag in tags {
-                        if tag.group == "地图" || tag.group == "Map" {
+                        let group_lower = tag.group.to_lowercase();
+                        if tag.group == "地图" || group_lower == "map" {
                             return Some(tag.name.clone());
                         }
                     }
