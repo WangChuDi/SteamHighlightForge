@@ -12,6 +12,120 @@ use timeline::{Timeline, GameSession, extract_app_id_from_filename, extract_date
 use video::VideoProcessor;
 use highlights::{get_extractor, HighlightClip, RoundInfo};
 
+fn find_steam_gamerecordings() -> Option<PathBuf> {
+    let steam_path = find_steam_install_path()?;
+    let userdata = steam_path.join("userdata");
+    if !userdata.exists() {
+        return None;
+    }
+
+    let entries = std::fs::read_dir(&userdata).ok()?;
+    for entry in entries.filter_map(|e| e.ok()) {
+        let user_dir = entry.path();
+        if !user_dir.is_dir() {
+            continue;
+        }
+
+        if let Some(custom_path) = parse_background_record_path(&user_dir) {
+            let custom = PathBuf::from(&custom_path);
+            if custom.exists() && custom.join("timelines").exists() {
+                return Some(custom);
+            }
+        }
+
+        let default_path = user_dir.join("gamerecordings");
+        if default_path.exists() && default_path.join("timelines").exists() {
+            return Some(default_path);
+        }
+    }
+
+    None
+}
+
+fn find_steam_install_path() -> Option<PathBuf> {
+    #[cfg(target_os = "windows")]
+    {
+        use winreg::enums::HKEY_CURRENT_USER;
+        use winreg::RegKey;
+
+        let hkcu = RegKey::predef(HKEY_CURRENT_USER);
+        if let Ok(steam_key) = hkcu.open_subkey("Software\\Valve\\Steam") {
+            if let Ok(steam_path) = steam_key.get_value::<String, _>("SteamPath") {
+                let path = PathBuf::from(steam_path);
+                if path.exists() {
+                    return Some(path);
+                }
+            }
+        }
+
+        let program_files = std::env::var("ProgramFiles(x86)").ok()
+            .or_else(|| std::env::var("ProgramFiles").ok())?;
+        let fallback = PathBuf::from(program_files).join("Steam");
+        if fallback.exists() { Some(fallback) } else { None }
+    }
+
+    #[cfg(target_os = "macos")]
+    {
+        let home = std::env::var("HOME").ok()?;
+        let path = PathBuf::from(home).join("Library/Application Support/Steam");
+        if path.exists() { Some(path) } else { None }
+    }
+
+    #[cfg(target_os = "linux")]
+    {
+        let home = std::env::var("HOME").ok()?;
+
+        let path1 = PathBuf::from(&home).join(".steam/steam");
+        if path1.exists() {
+            return Some(path1);
+        }
+
+        let path2 = PathBuf::from(&home).join(".local/share/Steam");
+        if path2.exists() { Some(path2) } else { None }
+    }
+}
+
+fn parse_background_record_path(user_dir: &Path) -> Option<String> {
+    let config_path = user_dir.join("config").join("localconfig.vdf");
+    let content = std::fs::read_to_string(&config_path).ok()?;
+
+    for line in content.lines() {
+        let trimmed = line.trim();
+        let lower = trimmed.to_lowercase();
+        if !lower.contains("\"backgroundrecordpath\"") {
+            continue;
+        }
+
+        let mut in_quotes = false;
+        let mut tokens: Vec<String> = Vec::new();
+        let mut current = String::new();
+
+        for ch in trimmed.chars() {
+            match ch {
+                '"' => {
+                    if in_quotes {
+                        tokens.push(current.clone());
+                        current.clear();
+                    }
+                    in_quotes = !in_quotes;
+                }
+                _ if in_quotes => current.push(ch),
+                _ => {}
+            }
+        }
+
+        if tokens.len() >= 2 {
+            let value = tokens[1].replace("\\\\", "/").replace('\\', "/");
+            if !value.is_empty() {
+                return Some(value);
+            }
+        }
+    }
+
+    None
+}
+
+
 fn handle_stream_request(request: &tauri::http::Request<Vec<u8>>) -> tauri::http::Response<Vec<u8>> {
     use std::io::{Read, Seek, SeekFrom};
 
@@ -202,6 +316,11 @@ fn get_recordings_path(state: State<AppState>) -> Option<String> {
         .unwrap()
         .as_ref()
         .map(|p| p.to_string_lossy().to_string())
+}
+
+#[tauri::command]
+fn auto_detect_recordings_path() -> Option<String> {
+    find_steam_gamerecordings().map(|p| p.to_string_lossy().to_string())
 }
 
 #[tauri::command]
@@ -472,6 +591,7 @@ pub fn run() {
         .plugin(tauri_plugin_dialog::init())
         .plugin(tauri_plugin_fs::init())
         .plugin(tauri_plugin_shell::init())
+        .plugin(tauri_plugin_libmpv::init())
         .manage(AppState::default())
         .register_asynchronous_uri_scheme_protocol("stream", |_ctx, request, responder| {
             std::thread::spawn(move || {
@@ -489,8 +609,13 @@ pub fn run() {
             }
 
             let config = AppConfig::load(app.handle());
-            if let Some(path) = config.recordings_path {
-                let path_buf = PathBuf::from(&path);
+            let recordings_path = if let Some(path) = config.recordings_path {
+                Some(PathBuf::from(path))
+            } else {
+                find_steam_gamerecordings()
+            };
+
+            if let Some(path_buf) = recordings_path {
                 if path_buf.exists() {
                     let state = app.state::<AppState>();
                     *state.recordings_path.lock().unwrap() = Some(path_buf);
@@ -502,6 +627,7 @@ pub fn run() {
         .invoke_handler(tauri::generate_handler![
             set_recordings_path,
             get_recordings_path,
+            auto_detect_recordings_path,
             load_config,
             save_config,
             scan_game_sessions,
