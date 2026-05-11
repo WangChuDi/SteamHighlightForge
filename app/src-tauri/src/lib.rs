@@ -455,6 +455,74 @@ fn extract_highlights(
 }
 
 #[tauri::command]
+async fn get_edl_uri(session_path: String) -> Result<String, String> {
+    let session_dir = Path::new(&session_path);
+
+    if !session_dir.exists() {
+        return Err(format!("Session directory not found: {}", session_path));
+    }
+
+    let init_video = session_dir.join("init-stream0.m4s");
+    if !init_video.exists() {
+        return Err("Video init segment (init-stream0.m4s) not found".to_string());
+    }
+
+    let mut video_chunks: Vec<String> = std::fs::read_dir(session_dir)
+        .map_err(|e| format!("Failed to read session dir: {}", e))?
+        .filter_map(|e| e.ok())
+        .filter_map(|e| {
+            let name = e.file_name().to_string_lossy().to_string();
+            if name.starts_with("chunk-stream0-") && name.ends_with(".m4s") {
+                Some(name)
+            } else {
+                None
+            }
+        })
+        .collect();
+    video_chunks.sort();
+
+    if video_chunks.is_empty() {
+        return Err("No video chunks found".to_string());
+    }
+
+    let init_audio = session_dir.join("init-stream1.m4s");
+    let mut audio_chunks: Vec<String> = std::fs::read_dir(session_dir)
+        .map_err(|e| format!("Failed to read session dir: {}", e))?
+        .filter_map(|e| e.ok())
+        .filter_map(|e| {
+            let name = e.file_name().to_string_lossy().to_string();
+            if name.starts_with("chunk-stream1-") && name.ends_with(".m4s") {
+                Some(name)
+            } else {
+                None
+            }
+        })
+        .collect();
+    audio_chunks.sort();
+
+    let session_path_str = session_dir.to_string_lossy().to_string();
+    let sep = if cfg!(windows) { "\\" } else { "/" };
+
+    let mut parts: Vec<String> = Vec::new();
+
+    parts.push("!new_stream".to_string());
+    parts.push(format!("!mp4_dash,init={}{}{}", session_path_str, sep, "init-stream0.m4s"));
+    for chunk in &video_chunks {
+        parts.push(format!("{}{}{}", session_path_str, sep, chunk));
+    }
+
+    if init_audio.exists() && !audio_chunks.is_empty() {
+        parts.push("!new_stream".to_string());
+        parts.push(format!("!mp4_dash,init={}{}{}", session_path_str, sep, "init-stream1.m4s"));
+        for chunk in &audio_chunks {
+            parts.push(format!("{}{}{}", session_path_str, sep, chunk));
+        }
+    }
+
+    Ok(format!("edl://{}", parts.join(";")))
+}
+
+#[tauri::command]
 async fn merge_video(
     session_path: String,
     output_path: String,
@@ -634,6 +702,7 @@ pub fn run() {
             load_timeline,
             get_rounds,
             extract_highlights,
+            get_edl_uri,
             merge_video,
             export_highlight_clips,
             check_ffmpeg,

@@ -58,12 +58,12 @@ function App() {
   const [isLoadingSession, setIsLoadingSession] = useState(false)
   const [isExtracting, setIsExtracting] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [mergedVideoPath, setMergedVideoPath] = useState<string | null>(null)
+  const [edlUri, setEdlUri] = useState<string | null>(null)
   const [videoTimeMs, setVideoTimeMs] = useState(0)
   const [seekToMs, setSeekToMs] = useState<number | null>(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [isExportDialogOpen, setIsExportDialogOpen] = useState(false)
-  const [isMerging, setIsMerging] = useState(false)
+  const [mergedVideoPath, setMergedVideoPath] = useState<string | null>(null)
   const videoTogglePlayRef = useRef<(() => void) | null>(null)
 
   useEffect(() => {
@@ -142,6 +142,7 @@ function App() {
       setError(null)
       setIsLoadingSession(true)
       setSelectedSession(session)
+      setEdlUri(null)
       setMergedVideoPath(null)
       const [sessionTimeline, sessionRounds] = await Promise.all([
         invoke<TimelineData>('load_timeline', { timelinePath: session.timeline_path }),
@@ -155,15 +156,12 @@ function App() {
       setVideoTimeMs(0)
 
       if (session.video_path) {
-        setIsMerging(true)
-        invoke<string>('merge_video', { sessionPath: session.video_path })
-          .then((merged) => {
-            setMergedVideoPath(merged)
-            setIsMerging(false)
+        invoke<string>('get_edl_uri', { sessionPath: session.video_path })
+          .then((uri) => {
+            setEdlUri(uri)
           })
           .catch((err) => {
-            setError(`Merge failed: ${err}`)
-            setIsMerging(false)
+            setError(`Failed to build EDL URI: ${err}`)
           })
       }
     } catch (sessionError) {
@@ -249,12 +247,12 @@ function App() {
           <section className="player-shell">
             <VideoPreview
               videoPath={selectedSession?.video_path ?? null}
-              mergedVideoPath={mergedVideoPath}
+              edlUri={edlUri}
               seekToMs={seekToMs}
               onTimeUpdate={setVideoTimeMs}
               onPlayStateChange={setIsPlaying}
               togglePlayRef={videoTogglePlayRef}
-              isLoading={isLoadingSession || isMerging}
+              isLoading={isLoadingSession}
               gameName={selectedSession?.game_name ?? 'No Session'}
               mapName={inferMapName(selectedSession, timeline)}
             />

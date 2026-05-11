@@ -26,8 +26,8 @@ body,
   background: transparent;
   color: var(--text-primary);
   font-family: system-ui, -apple-system, sans-serif;
-  user-select: none;
-  -webkit-user-select: none;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 button,

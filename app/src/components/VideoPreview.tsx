@@ -3,7 +3,7 @@ import { useMpv } from '../hooks/useMpv'
 
 interface VideoPreviewProps {
   videoPath: string | null
-  mergedVideoPath: string | null
+  edlUri: string | null
   seekToMs: number | null
   onTimeUpdate: (timeMs: number) => void
   onPlayStateChange: (playing: boolean) => void
@@ -13,14 +13,14 @@ interface VideoPreviewProps {
   mapName: string
 }
 
-export function VideoPreview({ videoPath, mergedVideoPath, seekToMs, onTimeUpdate, onPlayStateChange, togglePlayRef, isLoading, gameName, mapName }: VideoPreviewProps) {
+export function VideoPreview({ videoPath, edlUri, seekToMs, onTimeUpdate, onPlayStateChange, togglePlayRef, isLoading, gameName, mapName }: VideoPreviewProps) {
   const mpv = useMpv({
     onTimeUpdate,
     onPlayStateChange,
   })
 
   const lastLoadedPathRef = useRef<string | null>(null)
-  const hasAnyVideoSource = Boolean(videoPath || mergedVideoPath)
+  const hasAnyVideoSource = Boolean(videoPath || edlUri)
 
   useEffect(() => {
     togglePlayRef.current = () => { mpv.togglePlay() }
@@ -34,7 +34,7 @@ export function VideoPreview({ videoPath, mergedVideoPath, seekToMs, onTimeUpdat
     }
   }, [hasAnyVideoSource, mpv.initialized, mpv.initMpv])
 
-  const effectivePath = mergedVideoPath ?? videoPath
+  const effectivePath = edlUri ?? videoPath
   useEffect(() => {
     if (!mpv.initialized || !effectivePath) return
     if (effectivePath === lastLoadedPathRef.current) return
