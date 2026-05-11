@@ -183,7 +183,7 @@ select {
 }
 
 .center-player {
-  background: var(--bg);
+  background: transparent;
   padding: 14px;
 }
 

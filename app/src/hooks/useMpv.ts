@@ -37,8 +37,9 @@ export function useMpv(options: UseMpvOptions = {}) {
         await init({
           initialOptions: {
             'hwdec': 'auto-safe',
-            'vo': 'gpu',
+            'vo': 'gpu-next',
             'keep-open': 'yes',
+            'force-window': 'yes',
             'pause': 'yes',
             'osd-level': '0',
             'input-default-bindings': 'no',
