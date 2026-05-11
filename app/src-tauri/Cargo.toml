@@ -1,6 +1,6 @@
 [package]
 name = "steam-highlight-forge"
-version = "0.0.1"
+version = "0.0.2"
 description = "Steam Game Recording Highlight Exporter"
 authors = ["you"]
 license = "MIT"
