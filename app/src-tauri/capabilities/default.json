@@ -3,10 +3,17 @@
   "identifier": "default",
   "description": "enables the default permissions",
   "windows": [
-    "main"
+    "main",
+    "player"
   ],
   "permissions": [
     "core:default",
+    "core:window:allow-create",
+    "core:window:allow-close",
+    "core:window:allow-set-size",
+    "core:window:allow-set-position",
+    "core:window:allow-show",
+    "core:window:allow-hide",
     "dialog:default",
     "dialog:allow-open",
     "dialog:allow-save",
@@ -15,6 +22,7 @@
     "fs:allow-exists",
     "shell:default",
     "shell:allow-execute",
+    "libmpv:default",
     {
       "identifier": "fs:allow-read-file",
       "allow": [

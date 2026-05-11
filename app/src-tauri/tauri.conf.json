@@ -19,7 +19,8 @@
         "minHeight": 700,
         "resizable": true,
         "fullscreen": false,
-        "decorations": false
+        "decorations": false,
+        "transparent": true
       }
     ],
     "security": {
@@ -40,9 +41,12 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ],
+    "resources": {
+      "lib/*": "./"
+    },
     "linux": {
       "deb": {
-        "depends": ["ffmpeg"],
+        "depends": ["ffmpeg", "libmpv-dev"],
         "section": "games"
       },
       "appimage": {

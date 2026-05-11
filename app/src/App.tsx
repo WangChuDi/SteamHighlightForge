@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { invoke } from '@tauri-apps/api/core'
 import { getCurrentWindow } from '@tauri-apps/api/window'
-import type { AppConfig, GameSession, HighlightClip, RoundInfo, Timeline as TimelineData, TimelineEvent, VideoChunks } from './types'
+import type { AppConfig, GameSession, HighlightClip, RoundInfo, Timeline as TimelineData, TimelineEvent } from './types'
 import { SessionList } from './components/SessionList'
 import { Timeline } from './components/Timeline'
 import { VideoPreview } from './components/VideoPreview'
@@ -17,7 +17,7 @@ function inferMapName(session: GameSession | null, timelineData?: TimelineData |
   if (timelineData?.entries) {
     for (const entry of timelineData.entries) {
       if (entry.type === 'phase' && entry.tags) {
-        const mapTag = entry.tags.find((t) => t.group === '地图')
+        const mapTag = entry.tags.find((t) => t.group === '地图' || t.group === 'Map')
         if (mapTag) return mapTag.name
       }
     }
@@ -59,18 +59,27 @@ function App() {
   const [isExtracting, setIsExtracting] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [mergedVideoPath, setMergedVideoPath] = useState<string | null>(null)
-  const [videoChunks, setVideoChunks] = useState<VideoChunks | null>(null)
   const [videoTimeMs, setVideoTimeMs] = useState(0)
   const [seekToMs, setSeekToMs] = useState<number | null>(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [isExportDialogOpen, setIsExportDialogOpen] = useState(false)
+  const [isMerging, setIsMerging] = useState(false)
   const videoTogglePlayRef = useRef<(() => void) | null>(null)
 
   useEffect(() => {
-    invoke<AppConfig>('load_config').then((config) => {
-      if (config.recordings_path) {
-        setRecordingsPath(config.recordings_path)
-        invoke('set_recordings_path', { path: config.recordings_path })
+    invoke<AppConfig>('load_config').then(async (config) => {
+      let pathToUse = config.recordings_path
+
+      if (!pathToUse) {
+        const autoDetected = await invoke<string | null>('auto_detect_recordings_path')
+        if (autoDetected) {
+          pathToUse = autoDetected
+        }
+      }
+
+      if (pathToUse) {
+        setRecordingsPath(pathToUse)
+        invoke('set_recordings_path', { path: pathToUse })
           .then(() => invoke<GameSession[]>('scan_game_sessions'))
           .then((result) => setSessions(result))
           .catch(() => {})
@@ -134,7 +143,6 @@ function App() {
       setIsLoadingSession(true)
       setSelectedSession(session)
       setMergedVideoPath(null)
-      setVideoChunks(null)
       const [sessionTimeline, sessionRounds] = await Promise.all([
         invoke<TimelineData>('load_timeline', { timelinePath: session.timeline_path }),
         invoke<RoundInfo[]>('get_rounds', { timelinePath: session.timeline_path }),
@@ -147,9 +155,16 @@ function App() {
       setVideoTimeMs(0)
 
       if (session.video_path) {
-        invoke<VideoChunks>('get_video_chunks', { sessionPath: session.video_path })
-          .then((chunks) => setVideoChunks(chunks))
-          .catch(() => {})
+        setIsMerging(true)
+        invoke<string>('merge_video', { sessionPath: session.video_path })
+          .then((merged) => {
+            setMergedVideoPath(merged)
+            setIsMerging(false)
+          })
+          .catch((err) => {
+            setError(`Merge failed: ${err}`)
+            setIsMerging(false)
+          })
       }
     } catch (sessionError) {
       setError(sessionError instanceof Error ? sessionError.message : String(sessionError))
@@ -233,13 +248,13 @@ function App() {
         <main className="center-player">
           <section className="player-shell">
             <VideoPreview
-              videoPath={mergedVideoPath}
-              videoChunks={videoChunks}
+              videoPath={selectedSession?.video_path ?? null}
+              mergedVideoPath={mergedVideoPath}
               seekToMs={seekToMs}
               onTimeUpdate={setVideoTimeMs}
               onPlayStateChange={setIsPlaying}
               togglePlayRef={videoTogglePlayRef}
-              isLoading={isLoadingSession}
+              isLoading={isLoadingSession || isMerging}
               gameName={selectedSession?.game_name ?? 'No Session'}
               mapName={inferMapName(selectedSession, timeline)}
             />
